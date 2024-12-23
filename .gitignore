@@ -1,1 +1,7 @@
 *.root
+
+#ignore venv i vscode
+/LWtest/.venv/
+/LWtest/.vscode/
+/LWtest/hepmc2/
+
