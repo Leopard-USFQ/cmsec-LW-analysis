@@ -1,0 +1,11 @@
+DIGI,L1,DIGI2RAW,HLT:GRun,ENDJOB
+with DB:
+entry file:gensimLW.root
+Step: DIGI Spec: 
+Step: L1 Spec: 
+Step: DIGI2RAW Spec: 
+Step: HLT Spec: ['GRun']
+Step: ENDJOB Spec: 
+customising the process with addMonitoring from Configuration/DataProcessing/Utils
+customising the process with customizeHLTforMC from HLTrigger/Configuration/customizeHLTforMC
+Config file HLT.py created

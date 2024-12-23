@@ -1,0 +1,298 @@
+**************************************************************
+b tagging needs to be run on uncorrected jets. Hence, the JECs
+will first be undone for 'updatedPatJetsWithDeepInfo' and then applied to
+'updatedPatJetsTransientCorrectedWithDeepInfo'.
+**************************************************************
+Updating process to run DeepFlavour btag
+Will recalculate the following discriminators: pfDeepFlavourJetTags:probb, pfDeepFlavourJetTags:probbb, pfDeepFlavourJetTags:problepb, pfDeepFlavourJetTags:probc
+Updating process to run DeepBoostedJet on datasets before 103X
+Updating process to run ParticleNet before it's included in MiniAOD
+Updating process to run DeepDoubleX on datasets before 104X
+Updating process to run DeepDoubleXv2 on datasets before 11X
+Will recalculate the following discriminators on AK8 jets: pfDeepBoostedJetTags:probTbcq, pfDeepBoostedJetTags:probTbqq, pfDeepBoostedJetTags:probTbc, pfDeepBoostedJetTags:probTbq, pfDeepBoostedJetTags:probWcq, pfDeepBoostedJetTags:probWqq, pfDeepBoostedJetTags:probZbb, pfDeepBoostedJetTags:probZcc, pfDeepBoostedJetTags:probZqq, pfDeepBoostedJetTags:probHbb, pfDeepBoostedJetTags:probHcc, pfDeepBoostedJetTags:probHqqqq, pfDeepBoostedJetTags:probQCDbb, pfDeepBoostedJetTags:probQCDcc, pfDeepBoostedJetTags:probQCDb, pfDeepBoostedJetTags:probQCDc, pfDeepBoostedJetTags:probQCDothers, pfDeepBoostedDiscriminatorsJetTags:TvsQCD, pfDeepBoostedDiscriminatorsJetTags:WvsQCD, pfDeepBoostedDiscriminatorsJetTags:ZvsQCD, pfDeepBoostedDiscriminatorsJetTags:ZbbvsQCD, pfDeepBoostedDiscriminatorsJetTags:HbbvsQCD, pfDeepBoostedDiscriminatorsJetTags:H4qvsQCD, pfMassDecorrelatedDeepBoostedJetTags:probTbcq, pfMassDecorrelatedDeepBoostedJetTags:probTbqq, pfMassDecorrelatedDeepBoostedJetTags:probTbc, pfMassDecorrelatedDeepBoostedJetTags:probTbq, pfMassDecorrelatedDeepBoostedJetTags:probWcq, pfMassDecorrelatedDeepBoostedJetTags:probWqq, pfMassDecorrelatedDeepBoostedJetTags:probZbb, pfMassDecorrelatedDeepBoostedJetTags:probZcc, pfMassDecorrelatedDeepBoostedJetTags:probZqq, pfMassDecorrelatedDeepBoostedJetTags:probHbb, pfMassDecorrelatedDeepBoostedJetTags:probHcc, pfMassDecorrelatedDeepBoostedJetTags:probHqqqq, pfMassDecorrelatedDeepBoostedJetTags:probQCDbb, pfMassDecorrelatedDeepBoostedJetTags:probQCDcc, pfMassDecorrelatedDeepBoostedJetTags:probQCDb, pfMassDecorrelatedDeepBoostedJetTags:probQCDc, pfMassDecorrelatedDeepBoostedJetTags:probQCDothers, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:TvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:WvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ZvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ZHbbvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ZbbvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:HbbvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:H4qvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ZHccvsQCD, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:bbvsLight, pfMassDecorrelatedDeepBoostedDiscriminatorsJetTags:ccvsLight, pfParticleNetJetTags:probTbcq, pfParticleNetJetTags:probTbqq, pfParticleNetJetTags:probTbc, pfParticleNetJetTags:probTbq, pfParticleNetJetTags:probTbel, pfParticleNetJetTags:probTbmu, pfParticleNetJetTags:probTbta, pfParticleNetJetTags:probWcq, pfParticleNetJetTags:probWqq, pfParticleNetJetTags:probZbb, pfParticleNetJetTags:probZcc, pfParticleNetJetTags:probZqq, pfParticleNetJetTags:probHbb, pfParticleNetJetTags:probHcc, pfParticleNetJetTags:probHqqqq, pfParticleNetJetTags:probQCDbb, pfParticleNetJetTags:probQCDcc, pfParticleNetJetTags:probQCDb, pfParticleNetJetTags:probQCDc, pfParticleNetJetTags:probQCDothers, pfParticleNetDiscriminatorsJetTags:TvsQCD, pfParticleNetDiscriminatorsJetTags:WvsQCD, pfParticleNetDiscriminatorsJetTags:ZvsQCD, pfParticleNetDiscriminatorsJetTags:ZbbvsQCD, pfParticleNetDiscriminatorsJetTags:HbbvsQCD, pfParticleNetDiscriminatorsJetTags:HccvsQCD, pfParticleNetDiscriminatorsJetTags:H4qvsQCD, pfMassDecorrelatedParticleNetJetTags:probXbb, pfMassDecorrelatedParticleNetJetTags:probXcc, pfMassDecorrelatedParticleNetJetTags:probXqq, pfMassDecorrelatedParticleNetJetTags:probQCDbb, pfMassDecorrelatedParticleNetJetTags:probQCDcc, pfMassDecorrelatedParticleNetJetTags:probQCDb, pfMassDecorrelatedParticleNetJetTags:probQCDc, pfMassDecorrelatedParticleNetJetTags:probQCDothers, pfMassDecorrelatedParticleNetDiscriminatorsJetTags:XbbvsQCD, pfMassDecorrelatedParticleNetDiscriminatorsJetTags:XccvsQCD, pfMassDecorrelatedParticleNetDiscriminatorsJetTags:XqqvsQCD, pfParticleNetMassRegressionJetTags:mass, pfDeepDoubleBvLJetTags:probHbb, pfDeepDoubleCvLJetTags:probHcc, pfDeepDoubleCvBJetTags:probHcc, pfMassIndependentDeepDoubleBvLJetTags:probHbb, pfMassIndependentDeepDoubleCvLJetTags:probHcc, pfMassIndependentDeepDoubleCvBJetTags:probHcc, pfMassIndependentDeepDoubleBvLV2JetTags:probHbb, pfMassIndependentDeepDoubleCvLV2JetTags:probHcc, pfMassIndependentDeepDoubleCvBV2JetTags:probHcc
+add DeepMET Producers
+%MSG-i ThreadStreamSetup:  (NoModuleName) 03-Sep-2024 20:09:08 CEST pre-events
+setting # threads 4
+setting # streams 4
+%MSG
+03-Sep-2024 20:11:07 CEST  Initiating request to open file file:pat.root
+03-Sep-2024 20:11:09 CEST  Successfully opened file file:pat.root
+2024-09-03 20:11:12.307498: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+                         : Booking "muonMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_2016.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_2016.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_2016.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_2016.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_2016.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_2016.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_2016.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_2016.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVALowPt" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVALowPt" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVALowPt" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "muonMVALowPt" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/mu_BDTG_lowpt.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "electronMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/el_BDTG_2016.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/el_BDTG_2016.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "electronMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/el_BDTG_2016.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/el_BDTG_2016.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "electronMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/el_BDTG_2016.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/el_BDTG_2016.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+                         : Booking "electronMVATTH" of type "BDT" from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/el_BDTG_2016.weights.xml.
+                         : Reading weight file: /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_30/external/slc7_amd64_gcc700/data/PhysicsTools/NanoAOD/data/el_BDTG_2016.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDTG" of type: "BDT"
+%MSG-w BTagSFProducer:  BTagSFProducer:btagWeightTable@ctor  03-Sep-2024 20:11:17 CEST pre-events
+Skipped loading BTagCalibration for DeepCSVB as it was marked as unavailable in the configuration file. Event weights will not be stored.
+
+%MSG
+%MSG-w BTagSFProducer:  BTagSFProducer:btagWeightTable@ctor  03-Sep-2024 20:11:18 CEST pre-events
+Skipped loading BTagCalibration for DeepCSVB as it was marked as unavailable in the configuration file. Event weights will not be stored.
+
+%MSG
+%MSG-w BTagSFProducer:  BTagSFProducer:btagWeightTable@ctor  03-Sep-2024 20:11:18 CEST pre-events
+Skipped loading BTagCalibration for DeepCSVB as it was marked as unavailable in the configuration file. Event weights will not be stored.
+
+%MSG
+%MSG-w BTagSFProducer:  BTagSFProducer:btagWeightTable@ctor  03-Sep-2024 20:11:18 CEST pre-events
+Skipped loading BTagCalibration for DeepCSVB as it was marked as unavailable in the configuration file. Event weights will not be stored.
+
+%MSG
+%MSG-w LogicError:  HTXSRivetProducer:rivetProducerHTXS@beginRun  03-Sep-2024 20:12:21 CEST Run: 1
+::getByLabel: An attempt was made to read a Run product before endRun() was called.
+The product is of type 'LHERunInfoProduct'.
+The specified ModuleLabel was 'externalLHEProducer'.
+The specified productInstanceName was ''.
+
+%MSG
+%MSG-w LogicError:  GenWeightsTableProducer:genWeightsTable@beginRun  03-Sep-2024 20:12:21 CEST Run: 1
+::getByLabel: An attempt was made to read a Run product before endRun() was called.
+The product is of type 'LHERunInfoProduct'.
+The specified ModuleLabel was 'externalLHEProducer'.
+The specified productInstanceName was ''.
+
+%MSG
+%MSG-w LogicError:  GenWeightsTableProducer:genWeightsTable@beginRun  03-Sep-2024 20:12:21 CEST Run: 1
+::getByLabel: An attempt was made to read a Run product before endRun() was called.
+The product is of type 'LHERunInfoProduct'.
+The specified ModuleLabel was 'source'.
+The specified productInstanceName was ''.
+
+%MSG
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:21.696 CEST
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:21.696 CEST
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:21.697 CEST
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:21.697 CEST
+Rivet.Analysis.Handler: WARN  Analysis 'HiggsTemplateCrossSections' is unvalidated: be careful, it may be broken!
+==============================================================
+========     HiggsTemplateCrossSections Initialization     =========
+==============================================================
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  No HIGGSPRODMODE shell variable found. Needed when running Rivet stand-alone.
+==============================================================
+========             Higgs prod mode 0              =========
+========          Sucessful Initialization           =========
+==============================================================
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+%MSG-w L3Absolute not found:  PATJetUpdater:updatedPatJetsWithDeepInfo  03-Sep-2024 20:12:22 CEST Run: 1 Event: 4
+L2L3Residual and L3Absolute are not part of the jetCorrFactors
+of module patJetCorrFactorsWithDeepInfo. Jets will remain uncorrected.
+%MSG
+%MSG-w L3Absolute not found:  PATJetUpdater:updatedPatJetsWithDeepInfo  03-Sep-2024 20:12:22 CEST Run: 1 Event: 2
+L2L3Residual and L3Absolute are not part of the jetCorrFactors
+of module patJetCorrFactorsWithDeepInfo. Jets will remain uncorrected.
+%MSG
+%MSG-w L3Absolute not found:  PATJetUpdater:updatedPatJetsWithDeepInfo  03-Sep-2024 20:12:22 CEST Run: 1 Event: 3
+L2L3Residual and L3Absolute are not part of the jetCorrFactors
+of module patJetCorrFactorsWithDeepInfo. Jets will remain uncorrected.
+%MSG
+%MSG-w L3Absolute not found:  PATJetUpdater:updatedPatJetsWithDeepInfo  03-Sep-2024 20:12:22 CEST Run: 1 Event: 1
+L2L3Residual and L3Absolute are not part of the jetCorrFactors
+of module patJetCorrFactorsWithDeepInfo. Jets will remain uncorrected.
+%MSG
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:49.626 CEST
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:49.626 CEST
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:49.626 CEST
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:49.627 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:49.701 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:49.746 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 11th record. Run 1, Event 11, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:49.762 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 12th record. Run 1, Event 12, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:49.798 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 13th record. Run 1, Event 13, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:49.857 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 14th record. Run 1, Event 14, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:49.864 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 15th record. Run 1, Event 15, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:49.941 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 16th record. Run 1, Event 16, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:49.966 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 17th record. Run 1, Event 17, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:49.990 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 18th record. Run 1, Event 18, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:50.052 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 19th record. Run 1, Event 19, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:50.123 CEST
+Begin processing the 20th record. Run 1, Event 20, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:50.129 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: WARN  Unkown Higgs production mechanism. Cannot classify event. Classification for all events will most likely fail.
+Begin processing the 21st record. Run 1, Event 21, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:50.158 CEST
+Begin processing the 22nd record. Run 1, Event 22, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:50.186 CEST
+Begin processing the 23rd record. Run 1, Event 23, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:50.229 CEST
+Begin processing the 24th record. Run 1, Event 24, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:50.282 CEST
+Begin processing the 25th record. Run 1, Event 25, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:50.329 CEST
+Begin processing the 26th record. Run 1, Event 26, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:50.403 CEST
+Begin processing the 27th record. Run 1, Event 27, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:50.404 CEST
+Begin processing the 28th record. Run 1, Event 28, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:50.417 CEST
+Begin processing the 29th record. Run 1, Event 29, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:50.456 CEST
+Begin processing the 30th record. Run 1, Event 30, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:50.533 CEST
+Begin processing the 31st record. Run 1, Event 31, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:50.571 CEST
+Begin processing the 32nd record. Run 1, Event 32, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:50.594 CEST
+Begin processing the 33rd record. Run 1, Event 33, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:50.615 CEST
+Begin processing the 34th record. Run 1, Event 34, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:50.703 CEST
+Begin processing the 35th record. Run 1, Event 35, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:50.709 CEST
+Begin processing the 36th record. Run 1, Event 36, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:50.730 CEST
+Begin processing the 37th record. Run 1, Event 37, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:50.838 CEST
+Begin processing the 38th record. Run 1, Event 38, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:50.880 CEST
+Begin processing the 39th record. Run 1, Event 39, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:50.987 CEST
+Begin processing the 40th record. Run 1, Event 40, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:51.032 CEST
+Begin processing the 41st record. Run 1, Event 41, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:51.034 CEST
+Begin processing the 42nd record. Run 1, Event 42, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:51.254 CEST
+Begin processing the 43rd record. Run 1, Event 43, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:51.255 CEST
+Begin processing the 44th record. Run 1, Event 44, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:51.272 CEST
+Begin processing the 45th record. Run 1, Event 45, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:51.275 CEST
+Begin processing the 46th record. Run 1, Event 46, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:51.449 CEST
+Begin processing the 47th record. Run 1, Event 47, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:51.457 CEST
+Begin processing the 48th record. Run 1, Event 48, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:51.472 CEST
+Begin processing the 49th record. Run 1, Event 49, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:51.523 CEST
+Begin processing the 50th record. Run 1, Event 50, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:51.552 CEST
+Begin processing the 51st record. Run 1, Event 51, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:51.646 CEST
+Begin processing the 52nd record. Run 1, Event 52, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:51.647 CEST
+Begin processing the 53rd record. Run 1, Event 53, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:51.716 CEST
+Begin processing the 54th record. Run 1, Event 54, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:51.719 CEST
+Begin processing the 55th record. Run 1, Event 55, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:51.749 CEST
+Begin processing the 56th record. Run 1, Event 56, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:51.861 CEST
+Begin processing the 57th record. Run 1, Event 57, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:51.881 CEST
+Begin processing the 58th record. Run 1, Event 58, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:51.920 CEST
+Begin processing the 59th record. Run 1, Event 59, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:51.986 CEST
+Begin processing the 60th record. Run 1, Event 60, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:51.989 CEST
+Begin processing the 61st record. Run 1, Event 61, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:52.046 CEST
+Begin processing the 62nd record. Run 1, Event 62, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:52.128 CEST
+Begin processing the 63rd record. Run 1, Event 63, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:52.134 CEST
+Begin processing the 64th record. Run 1, Event 64, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:52.158 CEST
+Begin processing the 65th record. Run 1, Event 65, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:52.263 CEST
+Begin processing the 66th record. Run 1, Event 66, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:52.273 CEST
+Begin processing the 67th record. Run 1, Event 67, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:52.273 CEST
+Begin processing the 68th record. Run 1, Event 68, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:52.283 CEST
+Begin processing the 69th record. Run 1, Event 69, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:52.371 CEST
+Begin processing the 70th record. Run 1, Event 70, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:52.407 CEST
+Begin processing the 71st record. Run 1, Event 71, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:52.459 CEST
+Begin processing the 72nd record. Run 1, Event 72, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:52.503 CEST
+Begin processing the 73rd record. Run 1, Event 73, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:52.522 CEST
+Begin processing the 74th record. Run 1, Event 74, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:52.589 CEST
+Begin processing the 75th record. Run 1, Event 75, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:52.589 CEST
+Begin processing the 76th record. Run 1, Event 76, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:52.657 CEST
+Begin processing the 77th record. Run 1, Event 77, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:52.668 CEST
+Begin processing the 78th record. Run 1, Event 78, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:52.748 CEST
+Begin processing the 79th record. Run 1, Event 79, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:52.760 CEST
+Begin processing the 80th record. Run 1, Event 80, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:52.813 CEST
+Begin processing the 81st record. Run 1, Event 81, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:52.875 CEST
+Begin processing the 82nd record. Run 1, Event 82, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:52.877 CEST
+Begin processing the 83rd record. Run 1, Event 83, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:52.967 CEST
+Begin processing the 84th record. Run 1, Event 84, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:52.993 CEST
+Begin processing the 85th record. Run 1, Event 85, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:53.066 CEST
+Begin processing the 86th record. Run 1, Event 86, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:53.101 CEST
+Begin processing the 87th record. Run 1, Event 87, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:53.109 CEST
+Begin processing the 88th record. Run 1, Event 88, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:53.125 CEST
+Begin processing the 89th record. Run 1, Event 89, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:53.214 CEST
+Begin processing the 90th record. Run 1, Event 90, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:53.248 CEST
+Begin processing the 91st record. Run 1, Event 91, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:53.289 CEST
+Begin processing the 92nd record. Run 1, Event 92, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:53.293 CEST
+Begin processing the 93rd record. Run 1, Event 93, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:53.367 CEST
+Begin processing the 94th record. Run 1, Event 94, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:53.389 CEST
+Begin processing the 95th record. Run 1, Event 95, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:53.413 CEST
+Begin processing the 96th record. Run 1, Event 96, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:53.427 CEST
+Begin processing the 97th record. Run 1, Event 97, LumiSection 1 on stream 1 at 03-Sep-2024 20:12:53.510 CEST
+Begin processing the 98th record. Run 1, Event 98, LumiSection 1 on stream 0 at 03-Sep-2024 20:12:53.548 CEST
+Begin processing the 99th record. Run 1, Event 99, LumiSection 1 on stream 2 at 03-Sep-2024 20:12:53.599 CEST
+Begin processing the 100th record. Run 1, Event 100, LumiSection 1 on stream 3 at 03-Sep-2024 20:12:53.627 CEST
+Rivet.Analysis.HiggsTemplateCrossSections: INFO   ====================================================== 
+Rivet.Analysis.HiggsTemplateCrossSections: INFO        Higgs Template X-Sec Categorization Tool          
+Rivet.Analysis.HiggsTemplateCrossSections: INFO                  Status Code Summary                     
+Rivet.Analysis.HiggsTemplateCrossSections: INFO   ====================================================== 
+Rivet.Analysis.HiggsTemplateCrossSections: INFO       >>>> All 0 events successfully categorized!
+Rivet.Analysis.HiggsTemplateCrossSections: INFO   ====================================================== 
+Rivet.Analysis.HiggsTemplateCrossSections: INFO   ====================================================== 
+03-Sep-2024 20:12:53 CEST  Closed file file:pat.root
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 BTagSFProducer       -w BTagSFProducer:b                       4        4
+    2 L3Absolute not found -w PATJetUpdater:up                       4        4
+    3 LogicError           -w GenWeightsTableP                       2        2
+    4 LogicError           -w HTXSRivetProduce                       1        1
+    5 fileAction           -s file_close                             1        1
+    6 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 BTagSFProducer       pre-events       pre-events       pre-events
+    2 L3Absolute not found 1/4              1/2              1/1
+    3 LogicError           Run: 1           Run: 1           
+    4 LogicError           Run: 1                            
+    5 fileAction           End Run: 1                        
+    6 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                11                  11
+System                  3                   3
+
+dropped waiting message count 0

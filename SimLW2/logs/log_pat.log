@@ -1,0 +1,148 @@
+03-Sep-2024 20:05:14 CEST  Initiating request to open file file:reco.root
+03-Sep-2024 20:05:16 CEST  Successfully opened file file:reco.root
+2024-09-03 20:05:26.592052: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 03-Sep-2024 20:06:38.999 CEST
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:36.504 CEST
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:36.788 CEST
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:37.039 CEST
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:37.464 CEST
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:37.660 CEST
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:37.863 CEST
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:37.967 CEST
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:38.137 CEST
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:38.374 CEST
+Begin processing the 11th record. Run 1, Event 11, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:38.542 CEST
+Begin processing the 12th record. Run 1, Event 12, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:38.989 CEST
+Begin processing the 13th record. Run 1, Event 13, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:39.225 CEST
+Begin processing the 14th record. Run 1, Event 14, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:39.430 CEST
+Begin processing the 15th record. Run 1, Event 15, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:39.761 CEST
+Begin processing the 16th record. Run 1, Event 16, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:40.018 CEST
+Begin processing the 17th record. Run 1, Event 17, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:40.255 CEST
+Begin processing the 18th record. Run 1, Event 18, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:40.571 CEST
+Begin processing the 19th record. Run 1, Event 19, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:40.752 CEST
+Begin processing the 20th record. Run 1, Event 20, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:40.959 CEST
+Begin processing the 21st record. Run 1, Event 21, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:41.289 CEST
+Begin processing the 22nd record. Run 1, Event 22, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:41.519 CEST
+Begin processing the 23rd record. Run 1, Event 23, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:41.816 CEST
+Begin processing the 24th record. Run 1, Event 24, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:42.063 CEST
+Begin processing the 25th record. Run 1, Event 25, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:42.223 CEST
+Begin processing the 26th record. Run 1, Event 26, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:42.410 CEST
+Begin processing the 27th record. Run 1, Event 27, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:42.635 CEST
+Begin processing the 28th record. Run 1, Event 28, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:42.851 CEST
+Begin processing the 29th record. Run 1, Event 29, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:43.063 CEST
+Begin processing the 30th record. Run 1, Event 30, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:43.268 CEST
+Begin processing the 31st record. Run 1, Event 31, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:43.537 CEST
+Begin processing the 32nd record. Run 1, Event 32, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:43.751 CEST
+Begin processing the 33rd record. Run 1, Event 33, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:43.930 CEST
+Begin processing the 34th record. Run 1, Event 34, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:44.203 CEST
+Begin processing the 35th record. Run 1, Event 35, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:44.447 CEST
+Begin processing the 36th record. Run 1, Event 36, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:44.596 CEST
+Begin processing the 37th record. Run 1, Event 37, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:44.951 CEST
+Begin processing the 38th record. Run 1, Event 38, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:45.117 CEST
+Begin processing the 39th record. Run 1, Event 39, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:45.519 CEST
+Begin processing the 40th record. Run 1, Event 40, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:45.735 CEST
+Begin processing the 41st record. Run 1, Event 41, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:45.911 CEST
+Begin processing the 42nd record. Run 1, Event 42, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:46.081 CEST
+Begin processing the 43rd record. Run 1, Event 43, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:46.474 CEST
+Begin processing the 44th record. Run 1, Event 44, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:46.784 CEST
+Begin processing the 45th record. Run 1, Event 45, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:47.022 CEST
+Begin processing the 46th record. Run 1, Event 46, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:47.284 CEST
+Begin processing the 47th record. Run 1, Event 47, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:47.565 CEST
+Begin processing the 48th record. Run 1, Event 48, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:47.830 CEST
+Begin processing the 49th record. Run 1, Event 49, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:47.967 CEST
+Begin processing the 50th record. Run 1, Event 50, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:48.242 CEST
+Begin processing the 51st record. Run 1, Event 51, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:48.464 CEST
+Begin processing the 52nd record. Run 1, Event 52, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:48.706 CEST
+Begin processing the 53rd record. Run 1, Event 53, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:48.902 CEST
+Begin processing the 54th record. Run 1, Event 54, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:49.670 CEST
+Begin processing the 55th record. Run 1, Event 55, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:49.939 CEST
+Begin processing the 56th record. Run 1, Event 56, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:50.115 CEST
+Begin processing the 57th record. Run 1, Event 57, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:50.389 CEST
+Begin processing the 58th record. Run 1, Event 58, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:50.575 CEST
+Begin processing the 59th record. Run 1, Event 59, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:50.870 CEST
+Begin processing the 60th record. Run 1, Event 60, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:51.095 CEST
+Begin processing the 61st record. Run 1, Event 61, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:51.365 CEST
+Begin processing the 62nd record. Run 1, Event 62, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:51.691 CEST
+Begin processing the 63rd record. Run 1, Event 63, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:51.880 CEST
+Begin processing the 64th record. Run 1, Event 64, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:52.079 CEST
+Begin processing the 65th record. Run 1, Event 65, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:52.259 CEST
+Begin processing the 66th record. Run 1, Event 66, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:52.425 CEST
+Begin processing the 67th record. Run 1, Event 67, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:52.640 CEST
+Begin processing the 68th record. Run 1, Event 68, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:52.899 CEST
+Begin processing the 69th record. Run 1, Event 69, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:53.267 CEST
+Begin processing the 70th record. Run 1, Event 70, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:53.474 CEST
+Begin processing the 71st record. Run 1, Event 71, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:53.744 CEST
+Begin processing the 72nd record. Run 1, Event 72, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:53.924 CEST
+Begin processing the 73rd record. Run 1, Event 73, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:54.166 CEST
+Begin processing the 74th record. Run 1, Event 74, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:54.387 CEST
+Begin processing the 75th record. Run 1, Event 75, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:54.617 CEST
+Begin processing the 76th record. Run 1, Event 76, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:54.884 CEST
+Begin processing the 77th record. Run 1, Event 77, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:55.210 CEST
+Begin processing the 78th record. Run 1, Event 78, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:55.425 CEST
+Begin processing the 79th record. Run 1, Event 79, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:55.628 CEST
+Begin processing the 80th record. Run 1, Event 80, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:55.955 CEST
+Begin processing the 81st record. Run 1, Event 81, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:56.204 CEST
+Begin processing the 82nd record. Run 1, Event 82, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:56.504 CEST
+Begin processing the 83rd record. Run 1, Event 83, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:56.850 CEST
+Begin processing the 84th record. Run 1, Event 84, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:57.080 CEST
+Begin processing the 85th record. Run 1, Event 85, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:57.299 CEST
+Begin processing the 86th record. Run 1, Event 86, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:57.558 CEST
+Begin processing the 87th record. Run 1, Event 87, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:57.752 CEST
+Begin processing the 88th record. Run 1, Event 88, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:58.025 CEST
+Begin processing the 89th record. Run 1, Event 89, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:58.251 CEST
+Begin processing the 90th record. Run 1, Event 90, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:58.490 CEST
+Begin processing the 91st record. Run 1, Event 91, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:58.777 CEST
+Begin processing the 92nd record. Run 1, Event 92, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:58.917 CEST
+Begin processing the 93rd record. Run 1, Event 93, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:59.106 CEST
+Begin processing the 94th record. Run 1, Event 94, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:59.438 CEST
+Begin processing the 95th record. Run 1, Event 95, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:59.707 CEST
+Begin processing the 96th record. Run 1, Event 96, LumiSection 1 on stream 0 at 03-Sep-2024 20:08:59.990 CEST
+Begin processing the 97th record. Run 1, Event 97, LumiSection 1 on stream 0 at 03-Sep-2024 20:09:00.215 CEST
+Begin processing the 98th record. Run 1, Event 98, LumiSection 1 on stream 0 at 03-Sep-2024 20:09:00.405 CEST
+Begin processing the 99th record. Run 1, Event 99, LumiSection 1 on stream 0 at 03-Sep-2024 20:09:00.549 CEST
+Begin processing the 100th record. Run 1, Event 100, LumiSection 1 on stream 0 at 03-Sep-2024 20:09:01.098 CEST
+03-Sep-2024 20:09:01 CEST  Closed file file:reco.root
+TimeReport> Time report complete in 388.216 seconds
+ Time Summary: 
+ - Min event:   0.102381
+ - Max event:   117.501
+ - Avg event:   1.42068
+ - Total loop:  204.253
+ - Total init:  183.044
+ - Total job:   388.216
+ - EventSetup Lock:   0.000167131
+ - EventSetup Get:   144.817
+ Event Throughput: 0.48959 ev/s
+ CPU Summary: 
+ - Total loop:  34.3948
+ - Total init:  27.9243
+ - Total extra: 0
+ - Total job:   63.1535
+ Processing Summary: 
+ - Number of Events:  100
+ - Number of Global Begin Lumi Calls:  1
+ - Number of Global Begin Run Calls: 1
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 TimeReport           -e AfterModEndJob                         1        1
+    2 fileAction           -s file_close                             1        1
+    3 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 TimeReport           PostGlobalEndRun                  
+    2 fileAction           PostGlobalEndRun                  
+    3 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Error                   1                   1
+System                  3                   3
+
+dropped waiting message count 0

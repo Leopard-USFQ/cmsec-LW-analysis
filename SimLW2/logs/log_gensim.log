@@ -1,0 +1,1578 @@
+03-Sep-2024 19:17:05 CEST  Initiating request to open LHE file file:JJSJ_Addflighttime.lhe
+03-Sep-2024 19:17:05 CEST  Successfully opened LHE file file:JJSJ_Addflighttime.lhe
+%MSG-w LogicError:  Pythia8HadronizerFilter:generator@beginRun  03-Sep-2024 19:18:05 CEST Run: 1
+::getByLabel: An attempt was made to read a Run product before endRun() was called.
+The product is of type 'LHERunInfoProduct'.
+The specified ModuleLabel was 'source'.
+The specified productInstanceName was ''.
+
+%MSG
+
+ *------------------------------------------------------------------------------------* 
+ |                                                                                    | 
+ |  *------------------------------------------------------------------------------*  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+ |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  | 
+ |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  | 
+ |  |   P       Y      T    H   H   I   A   A                                      |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 03 Sep 2024 at 19:18:05    |  | 
+ |  |                                                                              |  | 
+ |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: christian.bierlich@thep.lu.se                                   |  | 
+ |  |   Nishita Desai;  Department of Theoretical Physics, Tata Institute,         |  | 
+ |  |      Homi Bhabha Road, Mumbai 400005, India;                                 |  | 
+ |  |      e-mail: desai@theory.tifr.res.in                                        |  | 
+ |  |   Ilkka Helenius;  Department of Physics, University of Jyvaskyla,           |  | 
+ |  |      P.O. Box 35, FI-40014 University of Jyvaskyla, Finland;                 |  | 
+ |  |      e-mail: ilkka.m.helenius@jyu.fi                                         |  | 
+ |  |   Philip Ilten;  School of Physics and Astronomy,                            |  | 
+ |  |      University of Birmingham, Birmingham, B152 2TT, UK;                     |  | 
+ |  |      e-mail: philten@cern.ch                                                 |  | 
+ |  |   Leif Lonnblad;  Department of Astronomy and Theoretical Physics,           |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: leif.lonnblad@thep.lu.se                                        |  | 
+ |  |   Stephen Mrenna;  Computing Division, Simulations Group,                    |  | 
+ |  |      Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA;  |  | 
+ |  |      e-mail: mrenna@fnal.gov                                                 |  | 
+ |  |   Stefan Prestel;  Department of Astronomy and Theoretical Physics,          |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: stefan.prestel@thep.lu.se                                       |  | 
+ |  |   Christine O. Rasmussen;  Department of Astronomy and Theoretical Physics,  |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: christine.rasmussen@thep.lu.se                                  |  | 
+ |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: torbjorn@thep.lu.se                                             |  | 
+ |  |   Peter Skands;  School of Physics,                                          |  | 
+ |  |      Monash University, PO Box 27, 3800 Melbourne, Australia;                |  | 
+ |  |      e-mail: peter.skands@monash.edu                                         |  | 
+ |  |                                                                              |  | 
+ |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  | 
+ |  |   T. Sjostrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  | 
+ |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  | 
+ |  |                                                                              |  | 
+ |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  | 
+ |  |   T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  | 
+ |  |                                                                              |  | 
+ |  |   An archive of program versions and documentation is found on the web:      |  | 
+ |  |   http://www.thep.lu.se/Pythia                                               |  | 
+ |  |                                                                              |  | 
+ |  |   This program is released under the GNU General Public Licence version 2.   |  | 
+ |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  | 
+ |  |                                                                              |  | 
+ |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+ |  |   Beware of errors and use common sense when interpreting results.           |  | 
+ |  |                                                                              |  | 
+ |  |   Copyright (C) 2018 Torbjorn Sjostrand                                      |  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  *------------------------------------------------------------------------------*  | 
+ |                                                                                    | 
+ *------------------------------------------------------------------------------------* 
+
+
+ *------------------------------------------------------------------------------------* 
+ |                                                                                    | 
+ |  *------------------------------------------------------------------------------*  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+ |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  | 
+ |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  | 
+ |  |   P       Y      T    H   H   I   A   A                                      |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 03 Sep 2024 at 19:18:05    |  | 
+ |  |                                                                              |  | 
+ |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: christian.bierlich@thep.lu.se                                   |  | 
+ |  |   Nishita Desai;  Department of Theoretical Physics, Tata Institute,         |  | 
+ |  |      Homi Bhabha Road, Mumbai 400005, India;                                 |  | 
+ |  |      e-mail: desai@theory.tifr.res.in                                        |  | 
+ |  |   Ilkka Helenius;  Department of Physics, University of Jyvaskyla,           |  | 
+ |  |      P.O. Box 35, FI-40014 University of Jyvaskyla, Finland;                 |  | 
+ |  |      e-mail: ilkka.m.helenius@jyu.fi                                         |  | 
+ |  |   Philip Ilten;  School of Physics and Astronomy,                            |  | 
+ |  |      University of Birmingham, Birmingham, B152 2TT, UK;                     |  | 
+ |  |      e-mail: philten@cern.ch                                                 |  | 
+ |  |   Leif Lonnblad;  Department of Astronomy and Theoretical Physics,           |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: leif.lonnblad@thep.lu.se                                        |  | 
+ |  |   Stephen Mrenna;  Computing Division, Simulations Group,                    |  | 
+ |  |      Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA;  |  | 
+ |  |      e-mail: mrenna@fnal.gov                                                 |  | 
+ |  |   Stefan Prestel;  Department of Astronomy and Theoretical Physics,          |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: stefan.prestel@thep.lu.se                                       |  | 
+ |  |   Christine O. Rasmussen;  Department of Astronomy and Theoretical Physics,  |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: christine.rasmussen@thep.lu.se                                  |  | 
+ |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: torbjorn@thep.lu.se                                             |  | 
+ |  |   Peter Skands;  School of Physics,                                          |  | 
+ |  |      Monash University, PO Box 27, 3800 Melbourne, Australia;                |  | 
+ |  |      e-mail: peter.skands@monash.edu                                         |  | 
+ |  |                                                                              |  | 
+ |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  | 
+ |  |   T. Sjostrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  | 
+ |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  | 
+ |  |                                                                              |  | 
+ |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  | 
+ |  |   T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  | 
+ |  |                                                                              |  | 
+ |  |   An archive of program versions and documentation is found on the web:      |  | 
+ |  |   http://www.thep.lu.se/Pythia                                               |  | 
+ |  |                                                                              |  | 
+ |  |   This program is released under the GNU General Public Licence version 2.   |  | 
+ |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  | 
+ |  |                                                                              |  | 
+ |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+ |  |   Beware of errors and use common sense when interpreting results.           |  | 
+ |  |                                                                              |  | 
+ |  |   Copyright (C) 2018 Torbjorn Sjostrand                                      |  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  *------------------------------------------------------------------------------*  | 
+ |                                                                                    | 
+ *------------------------------------------------------------------------------------* 
+
+ *-----------------------  SusyLesHouches SUSY/BSM Interface  ------------------------*
+ | Last Change 12 Apr 2017 - P. Skands
+ | (SLHA::readFile) line 38 - storing non-SLHA(2) block: yukawa
+ | (SLHA::readFile) line 44 - storing QNUMBERS for id = 556  lwe- 
+ *------------------------------------------------------------------------------------*
+ PYTHIA Info from SLHAinterface::initSLHA: No MODSEL found, keeping internal SUSY switched off  
+ PYTHIA Warning in SLHAinterface::initSLHA: ignoring QNUMBERS for id = 556 (already exists)
+ PYTHIA Warning in SLHAinterface::initSLHA: ignoring MASS entries for id = {1,2,3,4,5,6,11,12,13,14,15,16,21,22,23,24,556} (SLHA:keepSM. Use id > 1000000 for new particles)
+ PYTHIA Warning in SLHAinterface::initSLHA: ignoring MASS entries for id = {25} (m0 < SLHA:minMassSM)
+ PYTHIA Warning in SLHAinterface::initSLHA: ignoring DECAY tables for id = {1,2,3,4,5,6,11,12,13,14,15,16,21,22,23,24,556} (SLHA:keepSM. Use id > 1000000 for new particles)
+ PYTHIA Warning in SLHAinterface::initSLHA: ignoring DECAY tables for id = {25} (m0 < SLHA:minMassSM)
+
+ *-------  PYTHIA Process Initialization  --------------------------*
+ |                                                                  |
+ | We collide p+ with p+ at a CM energy of 1.300e+04 GeV            |
+ |                                                                  |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | Subprocess                                    Code |   Estimated |
+ |                                                    |    max (mb) |
+ |                                                    |             |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | Les Houches User Process(es)                  9999 |   1.000e-09 |
+ |                                                                  |
+ *-------  End PYTHIA Process Initialization -----------------------*
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                   sigmaNonDiffractive =    56.42 mb              | 
+ |                                                                  | 
+ |    pT0 =  2.81 gives sigmaInteraction =   267.14 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+ PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 1.231
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | Beams:frameType                               |                        5 |            1           1           5 | 
+ | Check:epTolErr                                |                0.0100000 |   1.0000e-04                         | 
+ | Main:timesAllowErrors                         |                    10000 |           10           0             | 
+ | MultipartonInteractions:ecmPow                |                  0.25208 |      0.21500         0.0     0.50000 | 
+ | MultipartonInteractions:expPow                |                  1.60000 |      1.85000     0.40000    10.00000 | 
+ | MultipartonInteractions:pT0Ref                |                  2.40240 |      2.28000     0.50000    10.00000 | 
+ | Next:numberShowEvent                          |                        0 |            1           0             | 
+ | ParticleDecays:allowPhotonRadiation           |                       on |          off                         | 
+ | ParticleDecays:limitTau0                      |                       on |          off                         | 
+ | SLHA:minMassSM                                |                 1000.000 |    100.00000                         | 
+ | Tune:preferLHAPDF                             |                        2 |            1           0           2 | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+      23  Z0                                  3   0   0   91.18760    2.50419   50.00000    0.00000  7.87987e-14   1   1   0   0   0
+              0     0   0.1540492    0        1       -1 
+              1     0   0.1194935    0        2       -2 
+              2     0   0.1540386    0        3       -3 
+              3     0   0.1193325    0        4       -4 
+              4     0   0.1523269    0        5       -5 
+              5     1   0.0335480    0       11      -11 
+              6     0   0.0667305    0       12      -12 
+              7     1   0.0335477    0       13      -13 
+              8     0   0.0667305    0       14      -14 
+              9     1   0.0334720    0       15      -15 
+             10     0   0.0667305    0       16      -16 
+
+     556  lwe-             lwe+               2  -3   0  200.00000    0.00000  200.00000  200.00000  2.70948e-02   0   1   0   0   0
+              0     1   1.0000000  100       23       11 
+
+ 1000001  ~d_1             ~d_1bar            1  -1   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        1 
+              1     1   0.0000000  103  1000039        3 
+              2     1   0.0000000  103  1000039        5 
+              3     1   0.0000000    0 -1000024        2 
+              4     1   0.0000000    0 -1000037        2 
+              5     1   0.0000000    0 -1000024        4 
+              6     1   0.0000000    0 -1000037        4 
+              7     1   0.0000000    0 -1000024        6 
+              8     1   0.0000000    0 -1000037        6 
+              9     1   0.0000000    0  1000022        1 
+             10     1   0.0000000    0  1000022        3 
+             11     1   0.0000000    0  1000022        5 
+             12     1   0.0000000    0  1000023        1 
+             13     1   0.0000000    0  1000023        3 
+             14     1   0.0000000    0  1000023        5 
+             15     1   0.0000000    0  1000025        1 
+             16     1   0.0000000    0  1000025        3 
+             17     1   0.0000000    0  1000025        5 
+             18     1   0.0000000    0  1000035        1 
+             19     1   0.0000000    0  1000035        3 
+             20     1   0.0000000    0  1000035        5 
+             21     1   0.0000000    0  1000002      -24 
+             22     1   0.0000000    0  1000004      -24 
+             23     1   0.0000000    0  1000006      -24 
+             24     1   0.0000000    0  2000002      -24 
+             25     1   0.0000000    0  2000004      -24 
+             26     1   0.0000000    0  2000006      -24 
+             27     1   0.0000000    0  1000002      -37 
+             28     1   0.0000000    0  1000004      -37 
+             29     1   0.0000000    0  1000006      -37 
+             30     1   0.0000000    0  2000002      -37 
+             31     1   0.0000000    0  2000004      -37 
+             32     1   0.0000000    0  2000006      -37 
+             33     1   0.0000000    0  1000021        1 
+             34     1   0.0000000    0  1000021        2 
+             35     1   0.0000000    0  1000021        5 
+             36     1   0.0000000    0      -12        1 
+             37     1   0.0000000    0      -12        3 
+             38     1   0.0000000    0      -12        5 
+             39     1   0.0000000    0      -14        1 
+             40     1   0.0000000    0      -14        3 
+             41     1   0.0000000    0      -14        5 
+             42     1   0.0000000    0      -16        1 
+             43     1   0.0000000    0      -16        3 
+             44     1   0.0000000    0      -16        5 
+             45     1   0.0000000    0       12        1 
+             46     1   0.0000000    0       11        2 
+             47     1   0.0000000    0       12        3 
+             48     1   0.0000000    0       11        4 
+             49     1   0.0000000    0       12        5 
+             50     1   0.0000000    0       11        6 
+             51     1   0.0000000    0       14        1 
+             52     1   0.0000000    0       13        2 
+             53     1   0.0000000    0       14        3 
+             54     1   0.0000000    0       13        4 
+             55     1   0.0000000    0       14        5 
+             56     1   0.0000000    0       13        6 
+             57     1   0.0000000    0       16        1 
+             58     1   0.0000000    0       15        2 
+             59     1   0.0000000    0       16        3 
+             60     1   0.0000000    0       15        4 
+             61     1   0.0000000    0       16        5 
+             62     1   0.0000000    0       15        6 
+             63     1   0.0000000    0       -2       -3 
+             64     1   0.0000000    0       -2       -5 
+             65     1   0.0000000    0       -4       -3 
+             66     1   0.0000000    0       -4       -5 
+             67     1   0.0000000    0       -6       -3 
+             68     1   0.0000000    0       -6       -5 
+
+ 1000002  ~u_1             ~u_1bar            1   2   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        2 
+              1     1   0.0000000  103  1000039        4 
+              2     1   0.0000000  103  1000039        6 
+              3     1   0.0000000    0  1000024        1 
+              4     1   0.0000000    0  1000024        3 
+              5     1   0.0000000    0  1000024        5 
+              6     1   0.0000000    0  1000037        1 
+              7     1   0.0000000    0  1000037        3 
+              8     1   0.0000000    0  1000037        5 
+              9     1   0.0000000    0  1000022        2 
+             10     1   0.0000000    0  1000022        4 
+             11     1   0.0000000    0  1000022        6 
+             12     1   0.0000000    0  1000023        2 
+             13     1   0.0000000    0  1000023        4 
+             14     1   0.0000000    0  1000023        6 
+             15     1   0.0000000    0  1000025        2 
+             16     1   0.0000000    0  1000025        4 
+             17     1   0.0000000    0  1000025        6 
+             18     1   0.0000000    0  1000035        2 
+             19     1   0.0000000    0  1000035        4 
+             20     1   0.0000000    0  1000035        6 
+             21     1   0.0000000    0  1000001      -24 
+             22     1   0.0000000    0  1000003      -24 
+             23     1   0.0000000    0  1000005      -24 
+             24     1   0.0000000    0  2000001      -24 
+             25     1   0.0000000    0  2000003      -24 
+             26     1   0.0000000    0  2000005      -24 
+             27     1   0.0000000    0  1000001      -37 
+             28     1   0.0000000    0  1000003      -37 
+             29     1   0.0000000    0  1000005      -37 
+             30     1   0.0000000    0  2000001      -37 
+             31     1   0.0000000    0  2000003      -37 
+             32     1   0.0000000    0  2000005      -37 
+             33     1   0.0000000    0  1000021        2 
+             34     1   0.0000000    0  1000021        4 
+             35     1   0.0000000    0  1000021        6 
+             36     1   0.0000000    0      -11        1 
+             37     1   0.0000000    0      -11        3 
+             38     1   0.0000000    0      -11        5 
+             39     1   0.0000000    0      -13        1 
+             40     1   0.0000000    0      -13        3 
+             41     1   0.0000000    0      -13        5 
+             42     1   0.0000000    0      -15        1 
+             43     1   0.0000000    0      -15        3 
+             44     1   0.0000000    0      -15        5 
+             45     1   0.0000000    0       -1       -3 
+             46     1   0.0000000    0       -1       -5 
+             47     1   0.0000000    0       -3       -5 
+
+ 1000003  ~d_2             ~d_2bar            1  -1   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        1 
+              1     1   0.0000000  103  1000039        3 
+              2     1   0.0000000  103  1000039        5 
+              3     1   0.0000000    0 -1000024        2 
+              4     1   0.0000000    0 -1000037        2 
+              5     1   0.0000000    0 -1000024        4 
+              6     1   0.0000000    0 -1000037        4 
+              7     1   0.0000000    0 -1000024        6 
+              8     1   0.0000000    0 -1000037        6 
+              9     1   0.0000000    0  1000022        1 
+             10     1   0.0000000    0  1000022        3 
+             11     1   0.0000000    0  1000022        5 
+             12     1   0.0000000    0  1000023        1 
+             13     1   0.0000000    0  1000023        3 
+             14     1   0.0000000    0  1000023        5 
+             15     1   0.0000000    0  1000025        1 
+             16     1   0.0000000    0  1000025        3 
+             17     1   0.0000000    0  1000025        5 
+             18     1   0.0000000    0  1000035        1 
+             19     1   0.0000000    0  1000035        3 
+             20     1   0.0000000    0  1000035        5 
+             21     1   0.0000000    0  1000002      -24 
+             22     1   0.0000000    0  1000004      -24 
+             23     1   0.0000000    0  1000006      -24 
+             24     1   0.0000000    0  2000002      -24 
+             25     1   0.0000000    0  2000004      -24 
+             26     1   0.0000000    0  2000006      -24 
+             27     1   0.0000000    0  1000002      -37 
+             28     1   0.0000000    0  1000004      -37 
+             29     1   0.0000000    0  1000006      -37 
+             30     1   0.0000000    0  2000002      -37 
+             31     1   0.0000000    0  2000004      -37 
+             32     1   0.0000000    0  2000006      -37 
+             33     1   0.0000000    0  1000021        1 
+             34     1   0.0000000    0  1000021        2 
+             35     1   0.0000000    0  1000021        5 
+             36     1   0.0000000    0      -12        1 
+             37     1   0.0000000    0      -12        3 
+             38     1   0.0000000    0      -12        5 
+             39     1   0.0000000    0      -14        1 
+             40     1   0.0000000    0      -14        3 
+             41     1   0.0000000    0      -14        5 
+             42     1   0.0000000    0      -16        1 
+             43     1   0.0000000    0      -16        3 
+             44     1   0.0000000    0      -16        5 
+             45     1   0.0000000    0       12        1 
+             46     1   0.0000000    0       11        2 
+             47     1   0.0000000    0       12        3 
+             48     1   0.0000000    0       11        4 
+             49     1   0.0000000    0       12        5 
+             50     1   0.0000000    0       11        6 
+             51     1   0.0000000    0       14        1 
+             52     1   0.0000000    0       13        2 
+             53     1   0.0000000    0       14        3 
+             54     1   0.0000000    0       13        4 
+             55     1   0.0000000    0       14        5 
+             56     1   0.0000000    0       13        6 
+             57     1   0.0000000    0       16        1 
+             58     1   0.0000000    0       15        2 
+             59     1   0.0000000    0       16        3 
+             60     1   0.0000000    0       15        4 
+             61     1   0.0000000    0       16        5 
+             62     1   0.0000000    0       15        6 
+             63     1   0.0000000    0       -2       -1 
+             64     1   0.0000000    0       -2       -5 
+             65     1   0.0000000    0       -4       -1 
+             66     1   0.0000000    0       -4       -5 
+             67     1   0.0000000    0       -6       -1 
+             68     1   0.0000000    0       -6       -5 
+
+ 1000004  ~u_2             ~u_2bar            1   2   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        2 
+              1     1   0.0000000  103  1000039        4 
+              2     1   0.0000000  103  1000039        6 
+              3     1   0.0000000    0  1000024        1 
+              4     1   0.0000000    0  1000024        3 
+              5     1   0.0000000    0  1000024        5 
+              6     1   0.0000000    0  1000037        1 
+              7     1   0.0000000    0  1000037        3 
+              8     1   0.0000000    0  1000037        5 
+              9     1   0.0000000    0  1000022        2 
+             10     1   0.0000000    0  1000022        4 
+             11     1   0.0000000    0  1000022        6 
+             12     1   0.0000000    0  1000023        2 
+             13     1   0.0000000    0  1000023        4 
+             14     1   0.0000000    0  1000023        6 
+             15     1   0.0000000    0  1000025        2 
+             16     1   0.0000000    0  1000025        4 
+             17     1   0.0000000    0  1000025        6 
+             18     1   0.0000000    0  1000035        2 
+             19     1   0.0000000    0  1000035        4 
+             20     1   0.0000000    0  1000035        6 
+             21     1   0.0000000    0  1000001      -24 
+             22     1   0.0000000    0  1000003      -24 
+             23     1   0.0000000    0  1000005      -24 
+             24     1   0.0000000    0  2000001      -24 
+             25     1   0.0000000    0  2000003      -24 
+             26     1   0.0000000    0  2000005      -24 
+             27     1   0.0000000    0  1000001      -37 
+             28     1   0.0000000    0  1000003      -37 
+             29     1   0.0000000    0  1000005      -37 
+             30     1   0.0000000    0  2000001      -37 
+             31     1   0.0000000    0  2000003      -37 
+             32     1   0.0000000    0  2000005      -37 
+             33     1   0.0000000    0  1000021        2 
+             34     1   0.0000000    0  1000021        4 
+             35     1   0.0000000    0  1000021        6 
+             36     1   0.0000000    0      -11        1 
+             37     1   0.0000000    0      -11        3 
+             38     1   0.0000000    0      -11        5 
+             39     1   0.0000000    0      -13        1 
+             40     1   0.0000000    0      -13        3 
+             41     1   0.0000000    0      -13        5 
+             42     1   0.0000000    0      -15        1 
+             43     1   0.0000000    0      -15        3 
+             44     1   0.0000000    0      -15        5 
+             45     1   0.0000000    0       -1       -3 
+             46     1   0.0000000    0       -1       -5 
+             47     1   0.0000000    0       -3       -5 
+
+ 1000005  ~d_3             ~d_3bar            1  -1   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        1 
+              1     1   0.0000000  103  1000039        3 
+              2     1   0.0000000  103  1000039        5 
+              3     1   0.0000000    0 -1000024        2 
+              4     1   0.0000000    0 -1000037        2 
+              5     1   0.0000000    0 -1000024        4 
+              6     1   0.0000000    0 -1000037        4 
+              7     1   0.0000000    0 -1000024        6 
+              8     1   0.0000000    0 -1000037        6 
+              9     1   0.0000000    0  1000022        1 
+             10     1   0.0000000    0  1000022        3 
+             11     1   0.0000000    0  1000022        5 
+             12     1   0.0000000    0  1000023        1 
+             13     1   0.0000000    0  1000023        3 
+             14     1   0.0000000    0  1000023        5 
+             15     1   0.0000000    0  1000025        1 
+             16     1   0.0000000    0  1000025        3 
+             17     1   0.0000000    0  1000025        5 
+             18     1   0.0000000    0  1000035        1 
+             19     1   0.0000000    0  1000035        3 
+             20     1   0.0000000    0  1000035        5 
+             21     1   0.0000000    0  1000002      -24 
+             22     1   0.0000000    0  1000004      -24 
+             23     1   0.0000000    0  1000006      -24 
+             24     1   0.0000000    0  2000002      -24 
+             25     1   0.0000000    0  2000004      -24 
+             26     1   0.0000000    0  2000006      -24 
+             27     1   0.0000000    0  1000002      -37 
+             28     1   0.0000000    0  1000004      -37 
+             29     1   0.0000000    0  1000006      -37 
+             30     1   0.0000000    0  2000002      -37 
+             31     1   0.0000000    0  2000004      -37 
+             32     1   0.0000000    0  2000006      -37 
+             33     1   0.0000000    0  1000021        1 
+             34     1   0.0000000    0  1000021        2 
+             35     1   0.0000000    0  1000021        5 
+             36     1   0.0000000    0      -12        1 
+             37     1   0.0000000    0      -12        3 
+             38     1   0.0000000    0      -12        5 
+             39     1   0.0000000    0      -14        1 
+             40     1   0.0000000    0      -14        3 
+             41     1   0.0000000    0      -14        5 
+             42     1   0.0000000    0      -16        1 
+             43     1   0.0000000    0      -16        3 
+             44     1   0.0000000    0      -16        5 
+             45     1   0.0000000    0       12        1 
+             46     1   0.0000000    0       11        2 
+             47     1   0.0000000    0       12        3 
+             48     1   0.0000000    0       11        4 
+             49     1   0.0000000    0       12        5 
+             50     1   0.0000000    0       11        6 
+             51     1   0.0000000    0       14        1 
+             52     1   0.0000000    0       13        2 
+             53     1   0.0000000    0       14        3 
+             54     1   0.0000000    0       13        4 
+             55     1   0.0000000    0       14        5 
+             56     1   0.0000000    0       13        6 
+             57     1   0.0000000    0       16        1 
+             58     1   0.0000000    0       15        2 
+             59     1   0.0000000    0       16        3 
+             60     1   0.0000000    0       15        4 
+             61     1   0.0000000    0       16        5 
+             62     1   0.0000000    0       15        6 
+             63     1   0.0000000    0       -2       -1 
+             64     1   0.0000000    0       -2       -3 
+             65     1   0.0000000    0       -4       -1 
+             66     1   0.0000000    0       -4       -3 
+             67     1   0.0000000    0       -6       -1 
+             68     1   0.0000000    0       -6       -3 
+
+ 1000006  ~u_3             ~u_3bar            1   2   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        2 
+              1     1   0.0000000  103  1000039        4 
+              2     1   0.0000000  103  1000039        6 
+              3     1   0.0000000    0  1000024        1 
+              4     1   0.0000000    0  1000024        3 
+              5     1   0.0000000    0  1000024        5 
+              6     1   0.0000000    0  1000037        1 
+              7     1   0.0000000    0  1000037        3 
+              8     1   0.0000000    0  1000037        5 
+              9     1   0.0000000    0  1000022        2 
+             10     1   0.0000000    0  1000022        4 
+             11     1   0.0000000    0  1000022        6 
+             12     1   0.0000000    0  1000023        2 
+             13     1   0.0000000    0  1000023        4 
+             14     1   0.0000000    0  1000023        6 
+             15     1   0.0000000    0  1000025        2 
+             16     1   0.0000000    0  1000025        4 
+             17     1   0.0000000    0  1000025        6 
+             18     1   0.0000000    0  1000035        2 
+             19     1   0.0000000    0  1000035        4 
+             20     1   0.0000000    0  1000035        6 
+             21     1   0.0000000    0  1000001      -24 
+             22     1   0.0000000    0  1000003      -24 
+             23     1   0.0000000    0  1000005      -24 
+             24     1   0.0000000    0  2000001      -24 
+             25     1   0.0000000    0  2000003      -24 
+             26     1   0.0000000    0  2000005      -24 
+             27     1   0.0000000    0  1000001      -37 
+             28     1   0.0000000    0  1000003      -37 
+             29     1   0.0000000    0  1000005      -37 
+             30     1   0.0000000    0  2000001      -37 
+             31     1   0.0000000    0  2000003      -37 
+             32     1   0.0000000    0  2000005      -37 
+             33     1   0.0000000    0  1000021        2 
+             34     1   0.0000000    0  1000021        4 
+             35     1   0.0000000    0  1000021        6 
+             36     1   0.0000000    0      -11        1 
+             37     1   0.0000000    0      -11        3 
+             38     1   0.0000000    0      -11        5 
+             39     1   0.0000000    0      -13        1 
+             40     1   0.0000000    0      -13        3 
+             41     1   0.0000000    0      -13        5 
+             42     1   0.0000000    0      -15        1 
+             43     1   0.0000000    0      -15        3 
+             44     1   0.0000000    0      -15        5 
+             45     1   0.0000000    0       -1       -3 
+             46     1   0.0000000    0       -1       -5 
+             47     1   0.0000000    0       -3       -5 
+
+ 1000011  ~e_1-            ~e_1+              1  -3   0  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039       11 
+              1     1   0.0000000    0 -1000024       12 
+              2     1   0.0000000    0 -1000037       12 
+              3     1   0.0000000    0  1000022       11 
+              4     1   0.0000000    0  1000023       11 
+              5     1   0.0000000    0  1000025       11 
+              6     1   0.0000000    0  1000035       11 
+              7     1   0.0000000    0  1000012      -24 
+              8     1   0.0000000    0  2000012      -24 
+              9     1   0.0000000    0  1000012      -37 
+             10     1   0.0000000    0       12       13 
+             11     1   0.0000000    0       12       15 
+             12     1   0.0000000    0       14       11 
+             13     1   0.0000000    0       14       15 
+             14     1   0.0000000    0       16       11 
+             15     1   0.0000000    0       16       13 
+             16     1   0.0000000    0      -14       11 
+             17     1   0.0000000    0      -14       13 
+             18     1   0.0000000    0      -14       15 
+             19     1   0.0000000    0      -16       11 
+             20     1   0.0000000    0      -16       13 
+             21     1   0.0000000    0      -16       15 
+             22     1   0.0000000    0       -2        1 
+             23     1   0.0000000    0       -2        3 
+             24     1   0.0000000    0       -2        5 
+             25     1   0.0000000    0       -4        1 
+             26     1   0.0000000    0       -4        3 
+             27     1   0.0000000    0       -4        5 
+             28     1   0.0000000    0       -6        1 
+             29     1   0.0000000    0       -6        3 
+             30     1   0.0000000    0       -6        5 
+
+ 1000013  ~e_2-            ~e_2+              1  -3   0  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039       13 
+              1     1   0.0000000    0 -1000024       14 
+              2     1   0.0000000    0 -1000037       14 
+              3     1   0.0000000    0  1000022       13 
+              4     1   0.0000000    0  1000023       13 
+              5     1   0.0000000    0  1000025       13 
+              6     1   0.0000000    0  1000035       13 
+              7     1   0.0000000    0  1000014      -24 
+              8     1   0.0000000    0  2000014      -24 
+              9     1   0.0000000    0  1000014      -37 
+             10     1   0.0000000    0  2000014      -37 
+             11     1   0.0000000    0       12       13 
+             12     1   0.0000000    0       12       15 
+             13     1   0.0000000    0       14       11 
+             14     1   0.0000000    0       14       15 
+             15     1   0.0000000    0       16       11 
+             16     1   0.0000000    0       16       13 
+             17     1   0.0000000    0      -12       11 
+             18     1   0.0000000    0      -12       13 
+             19     1   0.0000000    0      -12       15 
+             20     1   0.0000000    0      -16       11 
+             21     1   0.0000000    0      -16       13 
+             22     1   0.0000000    0      -16       15 
+             23     1   0.0000000    0       -2        1 
+             24     1   0.0000000    0       -2        3 
+             25     1   0.0000000    0       -2        5 
+             26     1   0.0000000    0       -4        1 
+             27     1   0.0000000    0       -4        3 
+             28     1   0.0000000    0       -4        5 
+             29     1   0.0000000    0       -6        1 
+             30     1   0.0000000    0       -6        3 
+             31     1   0.0000000    0       -6        5 
+
+ 1000015  ~e_3-            ~e_3+              1  -3   0  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039       15 
+              1     1   0.0000000    0 -1000024       16 
+              2     1   0.0000000    0 -1000037       16 
+              3     1   0.0000000    0  1000022       15 
+              4     1   0.0000000    0  1000023       15 
+              5     1   0.0000000    0  1000025       15 
+              6     1   0.0000000    0  1000035       15 
+              7     1   0.0000000    0  1000016      -24 
+              8     1   0.0000000    0  2000016      -24 
+              9     1   0.0000000    0  1000016      -37 
+             10     1   0.0000000    0  2000016      -37 
+             11     1   0.0000000    0       12       13 
+             12     1   0.0000000    0       12       15 
+             13     1   0.0000000    0       14       11 
+             14     1   0.0000000    0       14       15 
+             15     1   0.0000000    0       16       11 
+             16     1   0.0000000    0       16       13 
+             17     1   0.0000000    0      -12       11 
+             18     1   0.0000000    0      -12       13 
+             19     1   0.0000000    0      -12       15 
+             20     1   0.0000000    0      -14       11 
+             21     1   0.0000000    0      -14       13 
+             22     1   0.0000000    0      -14       15 
+             23     1   0.0000000    0       -2        1 
+             24     1   0.0000000    0       -2        3 
+             25     1   0.0000000    0       -2        5 
+             26     1   0.0000000    0       -4        1 
+             27     1   0.0000000    0       -4        3 
+             28     1   0.0000000    0       -4        5 
+             29     1   0.0000000    0       -6        1 
+             30     1   0.0000000    0       -6        3 
+             31     1   0.0000000    0       -6        5 
+
+ 2000001  ~d_4             ~d_4bar            1  -1   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        1 
+              1     1   0.0000000  103  1000039        3 
+              2     1   0.0000000  103  1000039        5 
+              3     1   0.0000000    0  1000024        2 
+              4     1   0.0000000    0  1000024        4 
+              5     1   0.0000000    0  1000024        6 
+              6     1   0.0000000    0  1000037        2 
+              7     1   0.0000000    0  1000037        4 
+              8     1   0.0000000    0  1000037        6 
+              9     1   0.0000000    0  1000022        1 
+             10     1   0.0000000    0  1000022        3 
+             11     1   0.0000000    0  1000022        5 
+             12     1   0.0000000    0  1000023        1 
+             13     1   0.0000000    0  1000023        3 
+             14     1   0.0000000    0  1000023        5 
+             15     1   0.0000000    0  1000025        1 
+             16     1   0.0000000    0  1000025        3 
+             17     1   0.0000000    0  1000025        5 
+             18     1   0.0000000    0  1000035        1 
+             19     1   0.0000000    0  1000035        3 
+             20     1   0.0000000    0  1000035        5 
+             21     1   0.0000000    0  1000023        1 
+             22     1   0.0000000    0  1000023        3 
+             23     1   0.0000000    0  1000023        5 
+             24     1   0.0000000    0  1000025        1 
+             25     1   0.0000000    0  1000025        3 
+             26     1   0.0000000    0  1000025        5 
+             27     1   0.0000000    0  1000001       23 
+             28     1   0.0000000    0  1000003       23 
+             29     1   0.0000000    0  1000005       23 
+             30     1   0.0000000    0  2000003       23 
+             31     1   0.0000000    0  2000005       23 
+             32     1   0.0000000    0  1000001       25 
+             33     1   0.0000000    0  1000003       25 
+             34     1   0.0000000    0  1000005       25 
+             35     1   0.0000000    0  2000003       25 
+             36     1   0.0000000    0  2000005       25 
+             37     1   0.0000000    0  1000001       35 
+             38     1   0.0000000    0  1000003       35 
+             39     1   0.0000000    0  1000005       35 
+             40     1   0.0000000    0  2000003       35 
+             41     1   0.0000000    0  2000005       35 
+             42     1   0.0000000    0  1000001       36 
+             43     1   0.0000000    0  1000003       36 
+             44     1   0.0000000    0  1000005       36 
+             45     1   0.0000000    0  2000003       36 
+             46     1   0.0000000    0  2000005       36 
+             47     1   0.0000000    0  1000002      -24 
+             48     1   0.0000000    0  1000004      -24 
+             49     1   0.0000000    0  1000006      -24 
+             50     1   0.0000000    0  2000002      -24 
+             51     1   0.0000000    0  2000004      -24 
+             52     1   0.0000000    0  2000006      -24 
+             53     1   0.0000000    0  1000002      -37 
+             54     1   0.0000000    0  1000004      -37 
+             55     1   0.0000000    0  1000006      -37 
+             56     1   0.0000000    0  2000002      -37 
+             57     1   0.0000000    0  2000004      -37 
+             58     1   0.0000000    0  2000006      -37 
+             59     1   0.0000000    0  1000021        1 
+             60     1   0.0000000    0  1000021        2 
+             61     1   0.0000000    0  1000021        5 
+             62     1   0.0000000    0      -12        1 
+             63     1   0.0000000    0      -12        3 
+             64     1   0.0000000    0      -12        5 
+             65     1   0.0000000    0      -14        1 
+             66     1   0.0000000    0      -14        3 
+             67     1   0.0000000    0      -14        5 
+             68     1   0.0000000    0      -16        1 
+             69     1   0.0000000    0      -16        3 
+             70     1   0.0000000    0      -16        5 
+             71     1   0.0000000    0       12        1 
+             72     1   0.0000000    0       11        2 
+             73     1   0.0000000    0       12        3 
+             74     1   0.0000000    0       11        4 
+             75     1   0.0000000    0       12        5 
+             76     1   0.0000000    0       11        6 
+             77     1   0.0000000    0       14        1 
+             78     1   0.0000000    0       13        2 
+             79     1   0.0000000    0       14        3 
+             80     1   0.0000000    0       13        4 
+             81     1   0.0000000    0       14        5 
+             82     1   0.0000000    0       13        6 
+             83     1   0.0000000    0       16        1 
+             84     1   0.0000000    0       15        2 
+             85     1   0.0000000    0       16        3 
+             86     1   0.0000000    0       15        4 
+             87     1   0.0000000    0       16        5 
+             88     1   0.0000000    0       15        6 
+             89     1   0.0000000    0       -2       -3 
+             90     1   0.0000000    0       -2       -5 
+             91     1   0.0000000    0       -4       -3 
+             92     1   0.0000000    0       -4       -5 
+             93     1   0.0000000    0       -6       -3 
+             94     1   0.0000000    0       -6       -5 
+
+ 2000002  ~u_4             ~u_4bar            1   2   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        2 
+              1     1   0.0000000  103  1000039        4 
+              2     1   0.0000000  103  1000039        6 
+              3     1   0.0000000    0  1000024        1 
+              4     1   0.0000000    0  1000024        3 
+              5     1   0.0000000    0  1000024        5 
+              6     1   0.0000000    0  1000037        1 
+              7     1   0.0000000    0  1000037        3 
+              8     1   0.0000000    0  1000037        5 
+              9     1   0.0000000    0  1000022        2 
+             10     1   0.0000000    0  1000022        4 
+             11     1   0.0000000    0  1000022        6 
+             12     1   0.0000000    0  1000023        2 
+             13     1   0.0000000    0  1000023        4 
+             14     1   0.0000000    0  1000023        6 
+             15     1   0.0000000    0  1000025        2 
+             16     1   0.0000000    0  1000025        4 
+             17     1   0.0000000    0  1000025        6 
+             18     1   0.0000000    0  1000035        2 
+             19     1   0.0000000    0  1000035        4 
+             20     1   0.0000000    0  1000035        6 
+             21     1   0.0000000    0  1000002       23 
+             22     1   0.0000000    0  1000004       23 
+             23     1   0.0000000    0  1000006       23 
+             24     1   0.0000000    0  2000004       23 
+             25     1   0.0000000    0  2000006       23 
+             26     1   0.0000000    0  1000002       25 
+             27     1   0.0000000    0  1000004       25 
+             28     1   0.0000000    0  1000006       25 
+             29     1   0.0000000    0  2000004       25 
+             30     1   0.0000000    0  2000006       25 
+             31     1   0.0000000    0  1000002       35 
+             32     1   0.0000000    0  1000004       35 
+             33     1   0.0000000    0  1000006       35 
+             34     1   0.0000000    0  2000004       35 
+             35     1   0.0000000    0  2000006       35 
+             36     1   0.0000000    0  1000002       36 
+             37     1   0.0000000    0  1000004       36 
+             38     1   0.0000000    0  1000006       36 
+             39     1   0.0000000    0  2000004       36 
+             40     1   0.0000000    0  2000006       36 
+             41     1   0.0000000    0  1000001      -24 
+             42     1   0.0000000    0  1000003      -24 
+             43     1   0.0000000    0  1000005      -24 
+             44     1   0.0000000    0  2000001      -24 
+             45     1   0.0000000    0  2000003      -24 
+             46     1   0.0000000    0  2000005      -24 
+             47     1   0.0000000    0  1000001      -37 
+             48     1   0.0000000    0  1000003      -37 
+             49     1   0.0000000    0  1000005      -37 
+             50     1   0.0000000    0  2000001      -37 
+             51     1   0.0000000    0  2000003      -37 
+             52     1   0.0000000    0  2000005      -37 
+             53     1   0.0000000    0  1000021        2 
+             54     1   0.0000000    0  1000021        4 
+             55     1   0.0000000    0  1000021        6 
+             56     1   0.0000000    0      -11        1 
+             57     1   0.0000000    0      -11        3 
+             58     1   0.0000000    0      -11        5 
+             59     1   0.0000000    0      -13        1 
+             60     1   0.0000000    0      -13        3 
+             61     1   0.0000000    0      -13        5 
+             62     1   0.0000000    0      -15        1 
+             63     1   0.0000000    0      -15        3 
+             64     1   0.0000000    0      -15        5 
+             65     1   0.0000000    0       -1       -3 
+             66     1   0.0000000    0       -1       -5 
+             67     1   0.0000000    0       -3       -5 
+
+ 2000003  ~d_5             ~d_5bar            1  -1   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        1 
+              1     1   0.0000000  103  1000039        3 
+              2     1   0.0000000  103  1000039        5 
+              3     1   0.0000000    0 -1000024        2 
+              4     1   0.0000000    0 -1000037        2 
+              5     1   0.0000000    0 -1000024        4 
+              6     1   0.0000000    0 -1000037        4 
+              7     1   0.0000000    0 -1000024        6 
+              8     1   0.0000000    0 -1000037        6 
+              9     1   0.0000000    0  1000022        1 
+             10     1   0.0000000    0  1000022        3 
+             11     1   0.0000000    0  1000022        5 
+             12     1   0.0000000    0  1000023        1 
+             13     1   0.0000000    0  1000023        3 
+             14     1   0.0000000    0  1000023        5 
+             15     1   0.0000000    0  1000025        1 
+             16     1   0.0000000    0  1000025        3 
+             17     1   0.0000000    0  1000025        5 
+             18     1   0.0000000    0  1000035        1 
+             19     1   0.0000000    0  1000035        3 
+             20     1   0.0000000    0  1000035        5 
+             21     1   0.0000000    0  1000023        1 
+             22     1   0.0000000    0  1000023        3 
+             23     1   0.0000000    0  1000023        5 
+             24     1   0.0000000    0  1000025        1 
+             25     1   0.0000000    0  1000025        3 
+             26     1   0.0000000    0  1000025        5 
+             27     1   0.0000000    0  1000001       23 
+             28     1   0.0000000    0  1000003       23 
+             29     1   0.0000000    0  1000005       23 
+             30     1   0.0000000    0  2000001       23 
+             31     1   0.0000000    0  2000005       23 
+             32     1   0.0000000    0  1000001       25 
+             33     1   0.0000000    0  1000003       25 
+             34     1   0.0000000    0  1000005       25 
+             35     1   0.0000000    0  2000001       25 
+             36     1   0.0000000    0  2000005       25 
+             37     1   0.0000000    0  1000001       35 
+             38     1   0.0000000    0  1000003       35 
+             39     1   0.0000000    0  1000005       35 
+             40     1   0.0000000    0  2000001       35 
+             41     1   0.0000000    0  2000005       35 
+             42     1   0.0000000    0  1000001       36 
+             43     1   0.0000000    0  1000003       36 
+             44     1   0.0000000    0  1000005       36 
+             45     1   0.0000000    0  2000001       36 
+             46     1   0.0000000    0  2000005       36 
+             47     1   0.0000000    0  1000002      -24 
+             48     1   0.0000000    0  1000004      -24 
+             49     1   0.0000000    0  1000006      -24 
+             50     1   0.0000000    0  2000002      -24 
+             51     1   0.0000000    0  2000004      -24 
+             52     1   0.0000000    0  2000006      -24 
+             53     1   0.0000000    0  1000002      -37 
+             54     1   0.0000000    0  1000004      -37 
+             55     1   0.0000000    0  1000006      -37 
+             56     1   0.0000000    0  2000002      -37 
+             57     1   0.0000000    0  2000004      -37 
+             58     1   0.0000000    0  2000006      -37 
+             59     1   0.0000000    0  1000021        1 
+             60     1   0.0000000    0  1000021        2 
+             61     1   0.0000000    0  1000021        5 
+             62     1   0.0000000    0      -12        1 
+             63     1   0.0000000    0      -12        3 
+             64     1   0.0000000    0      -12        5 
+             65     1   0.0000000    0      -14        1 
+             66     1   0.0000000    0      -14        3 
+             67     1   0.0000000    0      -14        5 
+             68     1   0.0000000    0      -16        1 
+             69     1   0.0000000    0      -16        3 
+             70     1   0.0000000    0      -16        5 
+             71     1   0.0000000    0       12        1 
+             72     1   0.0000000    0       11        2 
+             73     1   0.0000000    0       12        3 
+             74     1   0.0000000    0       11        4 
+             75     1   0.0000000    0       12        5 
+             76     1   0.0000000    0       11        6 
+             77     1   0.0000000    0       14        1 
+             78     1   0.0000000    0       13        2 
+             79     1   0.0000000    0       14        3 
+             80     1   0.0000000    0       13        4 
+             81     1   0.0000000    0       14        5 
+             82     1   0.0000000    0       13        6 
+             83     1   0.0000000    0       16        1 
+             84     1   0.0000000    0       15        2 
+             85     1   0.0000000    0       16        3 
+             86     1   0.0000000    0       15        4 
+             87     1   0.0000000    0       16        5 
+             88     1   0.0000000    0       15        6 
+             89     1   0.0000000    0       -2       -1 
+             90     1   0.0000000    0       -2       -5 
+             91     1   0.0000000    0       -4       -1 
+             92     1   0.0000000    0       -4       -5 
+             93     1   0.0000000    0       -6       -1 
+             94     1   0.0000000    0       -6       -5 
+
+ 2000004  ~u_5             ~u_5bar            1   2   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        2 
+              1     1   0.0000000  103  1000039        4 
+              2     1   0.0000000  103  1000039        6 
+              3     1   0.0000000    0  1000024        1 
+              4     1   0.0000000    0  1000024        3 
+              5     1   0.0000000    0  1000024        5 
+              6     1   0.0000000    0  1000037        1 
+              7     1   0.0000000    0  1000037        3 
+              8     1   0.0000000    0  1000037        5 
+              9     1   0.0000000    0  1000022        2 
+             10     1   0.0000000    0  1000022        4 
+             11     1   0.0000000    0  1000022        6 
+             12     1   0.0000000    0  1000023        2 
+             13     1   0.0000000    0  1000023        4 
+             14     1   0.0000000    0  1000023        6 
+             15     1   0.0000000    0  1000025        2 
+             16     1   0.0000000    0  1000025        4 
+             17     1   0.0000000    0  1000025        6 
+             18     1   0.0000000    0  1000035        2 
+             19     1   0.0000000    0  1000035        4 
+             20     1   0.0000000    0  1000035        6 
+             21     1   0.0000000    0  1000002       23 
+             22     1   0.0000000    0  1000004       23 
+             23     1   0.0000000    0  1000006       23 
+             24     1   0.0000000    0  2000002       23 
+             25     1   0.0000000    0  2000006       23 
+             26     1   0.0000000    0  1000002       25 
+             27     1   0.0000000    0  1000004       25 
+             28     1   0.0000000    0  1000006       25 
+             29     1   0.0000000    0  2000002       25 
+             30     1   0.0000000    0  2000006       25 
+             31     1   0.0000000    0  1000002       35 
+             32     1   0.0000000    0  1000004       35 
+             33     1   0.0000000    0  1000006       35 
+             34     1   0.0000000    0  2000002       35 
+             35     1   0.0000000    0  2000006       35 
+             36     1   0.0000000    0  1000002       36 
+             37     1   0.0000000    0  1000004       36 
+             38     1   0.0000000    0  1000006       36 
+             39     1   0.0000000    0  2000002       36 
+             40     1   0.0000000    0  2000006       36 
+             41     1   0.0000000    0  1000001      -24 
+             42     1   0.0000000    0  1000003      -24 
+             43     1   0.0000000    0  1000005      -24 
+             44     1   0.0000000    0  2000001      -24 
+             45     1   0.0000000    0  2000003      -24 
+             46     1   0.0000000    0  2000005      -24 
+             47     1   0.0000000    0  1000001      -37 
+             48     1   0.0000000    0  1000003      -37 
+             49     1   0.0000000    0  1000005      -37 
+             50     1   0.0000000    0  2000001      -37 
+             51     1   0.0000000    0  2000003      -37 
+             52     1   0.0000000    0  2000005      -37 
+             53     1   0.0000000    0  1000021        2 
+             54     1   0.0000000    0  1000021        4 
+             55     1   0.0000000    0  1000021        6 
+             56     1   0.0000000    0      -11        1 
+             57     1   0.0000000    0      -11        3 
+             58     1   0.0000000    0      -11        5 
+             59     1   0.0000000    0      -13        1 
+             60     1   0.0000000    0      -13        3 
+             61     1   0.0000000    0      -13        5 
+             62     1   0.0000000    0      -15        1 
+             63     1   0.0000000    0      -15        3 
+             64     1   0.0000000    0      -15        5 
+             65     1   0.0000000    0       -1       -3 
+             66     1   0.0000000    0       -1       -5 
+             67     1   0.0000000    0       -3       -5 
+
+ 2000005  ~d_6             ~d_6bar            1  -1   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        1 
+              1     1   0.0000000  103  1000039        3 
+              2     1   0.0000000  103  1000039        5 
+              3     1   0.0000000    0 -1000024        2 
+              4     1   0.0000000    0 -1000037        2 
+              5     1   0.0000000    0 -1000024        4 
+              6     1   0.0000000    0 -1000037        4 
+              7     1   0.0000000    0 -1000024        6 
+              8     1   0.0000000    0 -1000037        6 
+              9     1   0.0000000    0  1000022        1 
+             10     1   0.0000000    0  1000022        3 
+             11     1   0.0000000    0  1000022        5 
+             12     1   0.0000000    0  1000023        1 
+             13     1   0.0000000    0  1000023        3 
+             14     1   0.0000000    0  1000023        5 
+             15     1   0.0000000    0  1000025        1 
+             16     1   0.0000000    0  1000025        3 
+             17     1   0.0000000    0  1000025        5 
+             18     1   0.0000000    0  1000035        1 
+             19     1   0.0000000    0  1000035        3 
+             20     1   0.0000000    0  1000035        5 
+             21     1   0.0000000    0  1000023        1 
+             22     1   0.0000000    0  1000023        3 
+             23     1   0.0000000    0  1000023        5 
+             24     1   0.0000000    0  1000025        1 
+             25     1   0.0000000    0  1000025        3 
+             26     1   0.0000000    0  1000025        5 
+             27     1   0.0000000    0  1000001       23 
+             28     1   0.0000000    0  1000003       23 
+             29     1   0.0000000    0  1000005       23 
+             30     1   0.0000000    0  2000001       23 
+             31     1   0.0000000    0  2000003       23 
+             32     1   0.0000000    0  1000001       25 
+             33     1   0.0000000    0  1000003       25 
+             34     1   0.0000000    0  1000005       25 
+             35     1   0.0000000    0  2000001       25 
+             36     1   0.0000000    0  2000003       25 
+             37     1   0.0000000    0  1000001       35 
+             38     1   0.0000000    0  1000003       35 
+             39     1   0.0000000    0  1000005       35 
+             40     1   0.0000000    0  2000001       35 
+             41     1   0.0000000    0  2000003       35 
+             42     1   0.0000000    0  1000001       36 
+             43     1   0.0000000    0  1000003       36 
+             44     1   0.0000000    0  1000005       36 
+             45     1   0.0000000    0  2000001       36 
+             46     1   0.0000000    0  2000003       36 
+             47     1   0.0000000    0  1000002      -24 
+             48     1   0.0000000    0  1000004      -24 
+             49     1   0.0000000    0  1000006      -24 
+             50     1   0.0000000    0  2000002      -24 
+             51     1   0.0000000    0  2000004      -24 
+             52     1   0.0000000    0  2000006      -24 
+             53     1   0.0000000    0  1000002      -37 
+             54     1   0.0000000    0  1000004      -37 
+             55     1   0.0000000    0  1000006      -37 
+             56     1   0.0000000    0  2000002      -37 
+             57     1   0.0000000    0  2000004      -37 
+             58     1   0.0000000    0  2000006      -37 
+             59     1   0.0000000    0  1000021        1 
+             60     1   0.0000000    0  1000021        2 
+             61     1   0.0000000    0  1000021        5 
+             62     1   0.0000000    0      -12        1 
+             63     1   0.0000000    0      -12        3 
+             64     1   0.0000000    0      -12        5 
+             65     1   0.0000000    0      -14        1 
+             66     1   0.0000000    0      -14        3 
+             67     1   0.0000000    0      -14        5 
+             68     1   0.0000000    0      -16        1 
+             69     1   0.0000000    0      -16        3 
+             70     1   0.0000000    0      -16        5 
+             71     1   0.0000000    0       12        1 
+             72     1   0.0000000    0       11        2 
+             73     1   0.0000000    0       12        3 
+             74     1   0.0000000    0       11        4 
+             75     1   0.0000000    0       12        5 
+             76     1   0.0000000    0       11        6 
+             77     1   0.0000000    0       14        1 
+             78     1   0.0000000    0       13        2 
+             79     1   0.0000000    0       14        3 
+             80     1   0.0000000    0       13        4 
+             81     1   0.0000000    0       14        5 
+             82     1   0.0000000    0       13        6 
+             83     1   0.0000000    0       16        1 
+             84     1   0.0000000    0       15        2 
+             85     1   0.0000000    0       16        3 
+             86     1   0.0000000    0       15        4 
+             87     1   0.0000000    0       16        5 
+             88     1   0.0000000    0       15        6 
+             89     1   0.0000000    0       -2       -1 
+             90     1   0.0000000    0       -2       -3 
+             91     1   0.0000000    0       -4       -1 
+             92     1   0.0000000    0       -4       -3 
+             93     1   0.0000000    0       -6       -1 
+             94     1   0.0000000    0       -6       -3 
+
+ 2000006  ~u_6             ~u_6bar            1   2   1  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039        2 
+              1     1   0.0000000  103  1000039        4 
+              2     1   0.0000000  103  1000039        6 
+              3     1   0.0000000    0  1000024        1 
+              4     1   0.0000000    0  1000024        3 
+              5     1   0.0000000    0  1000024        5 
+              6     1   0.0000000    0  1000037        1 
+              7     1   0.0000000    0  1000037        3 
+              8     1   0.0000000    0  1000037        5 
+              9     1   0.0000000    0  1000022        2 
+             10     1   0.0000000    0  1000022        4 
+             11     1   0.0000000    0  1000022        6 
+             12     1   0.0000000    0  1000023        2 
+             13     1   0.0000000    0  1000023        4 
+             14     1   0.0000000    0  1000023        6 
+             15     1   0.0000000    0  1000025        2 
+             16     1   0.0000000    0  1000025        4 
+             17     1   0.0000000    0  1000025        6 
+             18     1   0.0000000    0  1000035        2 
+             19     1   0.0000000    0  1000035        4 
+             20     1   0.0000000    0  1000035        6 
+             21     1   0.0000000    0  1000002       23 
+             22     1   0.0000000    0  1000004       23 
+             23     1   0.0000000    0  1000006       23 
+             24     1   0.0000000    0  2000002       23 
+             25     1   0.0000000    0  2000004       23 
+             26     1   0.0000000    0  1000002       25 
+             27     1   0.0000000    0  1000004       25 
+             28     1   0.0000000    0  1000006       25 
+             29     1   0.0000000    0  2000002       25 
+             30     1   0.0000000    0  2000004       25 
+             31     1   0.0000000    0  1000002       35 
+             32     1   0.0000000    0  1000004       35 
+             33     1   0.0000000    0  1000006       35 
+             34     1   0.0000000    0  2000002       35 
+             35     1   0.0000000    0  2000004       35 
+             36     1   0.0000000    0  1000002       36 
+             37     1   0.0000000    0  1000004       36 
+             38     1   0.0000000    0  1000006       36 
+             39     1   0.0000000    0  2000002       36 
+             40     1   0.0000000    0  2000004       36 
+             41     1   0.0000000    0  1000001      -24 
+             42     1   0.0000000    0  1000003      -24 
+             43     1   0.0000000    0  1000005      -24 
+             44     1   0.0000000    0  2000001      -24 
+             45     1   0.0000000    0  2000003      -24 
+             46     1   0.0000000    0  2000005      -24 
+             47     1   0.0000000    0  1000001      -37 
+             48     1   0.0000000    0  1000003      -37 
+             49     1   0.0000000    0  1000005      -37 
+             50     1   0.0000000    0  2000001      -37 
+             51     1   0.0000000    0  2000003      -37 
+             52     1   0.0000000    0  2000005      -37 
+             53     1   0.0000000    0  1000021        2 
+             54     1   0.0000000    0  1000021        4 
+             55     1   0.0000000    0  1000021        6 
+             56     1   0.0000000    0      -11        1 
+             57     1   0.0000000    0      -11        3 
+             58     1   0.0000000    0      -11        5 
+             59     1   0.0000000    0      -13        1 
+             60     1   0.0000000    0      -13        3 
+             61     1   0.0000000    0      -13        5 
+             62     1   0.0000000    0      -15        1 
+             63     1   0.0000000    0      -15        3 
+             64     1   0.0000000    0      -15        5 
+             65     1   0.0000000    0       -1       -3 
+             66     1   0.0000000    0       -1       -5 
+             67     1   0.0000000    0       -3       -5 
+
+ 2000011  ~e_4-            ~e_4+              1  -3   0  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039       11 
+              1     1   0.0000000    0 -1000024       12 
+              2     1   0.0000000    0 -1000037       12 
+              3     1   0.0000000    0  1000022       11 
+              4     1   0.0000000    0  1000023       11 
+              5     1   0.0000000    0  1000025       11 
+              6     1   0.0000000    0  1000035       11 
+              7     1   0.0000000    0  1000011       23 
+              8     1   0.0000000    0  1000011       25 
+              9     1   0.0000000    0  1000011       35 
+             10     1   0.0000000    0  1000011       36 
+             11     1   0.0000000    0  1000012      -24 
+             12     1   0.0000000    0  2000012      -24 
+             13     1   0.0000000    0  1000012      -37 
+             14     1   0.0000000    0  2000012      -37 
+             15     1   0.0000000    0       12       13 
+             16     1   0.0000000    0       12       15 
+             17     1   0.0000000    0       14       11 
+             18     1   0.0000000    0       14       15 
+             19     1   0.0000000    0       16       11 
+             20     1   0.0000000    0       16       13 
+             21     1   0.0000000    0      -14       11 
+             22     1   0.0000000    0      -14       13 
+             23     1   0.0000000    0      -14       15 
+             24     1   0.0000000    0      -16       11 
+             25     1   0.0000000    0      -16       13 
+             26     1   0.0000000    0      -16       15 
+             27     1   0.0000000    0       -2        1 
+             28     1   0.0000000    0       -2        3 
+             29     1   0.0000000    0       -2        5 
+             30     1   0.0000000    0       -4        1 
+             31     1   0.0000000    0       -4        3 
+             32     1   0.0000000    0       -4        5 
+             33     1   0.0000000    0       -6        1 
+             34     1   0.0000000    0       -6        3 
+             35     1   0.0000000    0       -6        5 
+
+ 2000013  ~e_5-            ~e_5+              1  -3   0  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039       13 
+              1     1   0.0000000    0 -1000024       14 
+              2     1   0.0000000    0 -1000037       14 
+              3     1   0.0000000    0  1000022       13 
+              4     1   0.0000000    0  1000023       13 
+              5     1   0.0000000    0  1000025       13 
+              6     1   0.0000000    0  1000035       13 
+              7     1   0.0000000    0  1000013       23 
+              8     1   0.0000000    0  1000013       25 
+              9     1   0.0000000    0  1000013       35 
+             10     1   0.0000000    0  1000013       36 
+             11     1   0.0000000    0  1000014      -24 
+             12     1   0.0000000    0  2000014      -24 
+             13     1   0.0000000    0  1000014      -37 
+             14     1   0.0000000    0  2000014      -37 
+             15     1   0.0000000    0       12       13 
+             16     1   0.0000000    0       12       15 
+             17     1   0.0000000    0       14       11 
+             18     1   0.0000000    0       14       15 
+             19     1   0.0000000    0       16       11 
+             20     1   0.0000000    0       16       13 
+             21     1   0.0000000    0      -12       11 
+             22     1   0.0000000    0      -12       13 
+             23     1   0.0000000    0      -12       15 
+             24     1   0.0000000    0      -16       11 
+             25     1   0.0000000    0      -16       13 
+             26     1   0.0000000    0      -16       15 
+             27     1   0.0000000    0       -2        1 
+             28     1   0.0000000    0       -2        3 
+             29     1   0.0000000    0       -2        5 
+             30     1   0.0000000    0       -4        1 
+             31     1   0.0000000    0       -4        3 
+             32     1   0.0000000    0       -4        5 
+             33     1   0.0000000    0       -6        1 
+             34     1   0.0000000    0       -6        3 
+             35     1   0.0000000    0       -6        5 
+
+ 2000015  ~e_6-            ~e_6+              1  -3   0  500.00000    0.00000   50.00000    0.00000  0.00000e+00   1   0   0   1   0
+              0     1   0.0000000  103  1000039       15 
+              1     1   0.0000000    0 -1000024       16 
+              2     1   0.0000000    0 -1000037       16 
+              3     1   0.0000000    0  1000022       15 
+              4     1   0.0000000    0  1000023       15 
+              5     1   0.0000000    0  1000025       15 
+              6     1   0.0000000    0  1000035       15 
+              7     1   0.0000000    0  1000015       23 
+              8     1   0.0000000    0  1000015       25 
+              9     1   0.0000000    0  1000015       35 
+             10     1   0.0000000    0  1000015       36 
+             11     1   0.0000000    0  1000016      -24 
+             12     1   0.0000000    0  2000016      -24 
+             13     1   0.0000000    0  1000016      -37 
+             14     1   0.0000000    0  2000016      -37 
+             15     1   0.0000000    0       12       13 
+             16     1   0.0000000    0       12       15 
+             17     1   0.0000000    0       14       11 
+             18     1   0.0000000    0       14       15 
+             19     1   0.0000000    0       16       11 
+             20     1   0.0000000    0       16       13 
+             21     1   0.0000000    0      -12       11 
+             22     1   0.0000000    0      -12       13 
+             23     1   0.0000000    0      -12       15 
+             24     1   0.0000000    0      -14       11 
+             25     1   0.0000000    0      -14       13 
+             26     1   0.0000000    0      -14       15 
+             27     1   0.0000000    0       -2        1 
+             28     1   0.0000000    0       -2        3 
+             29     1   0.0000000    0       -2        5 
+             30     1   0.0000000    0       -4        1 
+             31     1   0.0000000    0       -4        3 
+             32     1   0.0000000    0       -4        5 
+             33     1   0.0000000    0       -6        1 
+             34     1   0.0000000    0       -6        3 
+             35     1   0.0000000    0       -6        5 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | Next:numberShowEvent                          |                        0 |            1           0             | 
+ | ParticleDecays:allowPhotonRadiation           |                       on |          off                         | 
+ | ParticleDecays:limitTau0                      |                       on |          off                         | 
+ | ProcessLevel:all                              |                      off |           on                         | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+ no particle data has been changed from its default value 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 03-Sep-2024 19:18:05.912 CEST
+
+ --------  LHA event information and listing  ---------------------------------------------------------------------- 
+
+    process =        1    weight =   1.4546e-02     scale =   1.0180e+03 (GeV) 
+                        alpha_em =   7.8186e-03    alpha_strong =   9.2891e-02
+
+    Participating Particles 
+    no        id stat     mothers     colours      p_x        p_y        p_z         e          m        tau    spin 
+     1         1   -1     0     0   501     0      0.000      0.000   1442.240   1442.240      0.000   0.000  -1.000
+     2        -1   -1     0     0     0   501     -0.000     -0.000   -179.627    179.627      0.000   0.000   1.000
+     3      -556    2     1     2     0     0     22.158   -164.018   1328.834   1353.954    200.000   0.000   0.000
+     4       556    2     1     2     0     0    -22.158    164.018    -66.221    267.914    199.999   0.008   0.000
+     5       -11    1     3     3     0     0    -13.900    -13.565      8.062     21.029      0.000   0.000  -1.000
+     6        23    1     3     3     0     0     36.058   -150.453   1320.772   1332.925     91.188   0.000  -1.000
+     7        11    1     4     4     0     0     10.282    161.570    -52.093    170.071      0.000   0.000   1.000
+     8        23    1     4     4     0     0    -32.440      2.448    -14.128     97.842     91.188   0.000   1.000
+
+ --------  End LHA event information and listing  ------------------------------------------------------------------ 
+
+ --------  PYTHIA Info Listing  ---------------------------------------- 
+ 
+ Beam A: id =   2212, pz =  6.500e+03, e =  6.500e+03, m =  9.383e-01.
+ Beam B: id =   2212, pz = -6.500e+03, e =  6.500e+03, m =  9.383e-01.
+
+ In 1: id =    1, x =  2.219e-01, pdf =  0.000e+00 at Q2 =  1.036e+06.
+ In 2: id =   -1, x =  2.763e-02, pdf =  0.000e+00 at same Q2.
+
+ Process Les Houches User Process(es) with code 9999 is 2 -> 2.
+ Subprocess user process 1 with code 1 is 2 -> 2.
+ It has sHat =  1.036e+06,    tHat = -3.246e+04,    uHat = -9.238e+05,
+       pTHat =  1.655e+02,   m3Hat =  2.000e+02,   m4Hat =  2.000e+02,
+    thetaHat =  3.614e-01,  phiHat = -1.437e+00.
+     alphaEM =  7.819e-03,  alphaS =  9.289e-02    at Q2 =  1.036e+06.
+
+ Impact parameter b =  1.173e+00 gives enhancement factor =  3.006e-01.
+ Max pT scale for MPI =  1.300e+04, ISR =  1.300e+04, FSR =  1.300e+04.
+ Number of MPI =     2, ISR =     3, FSRproc =    20, FSRreson =     7.
+
+ --------  End PYTHIA Info Listing  ------------------------------------
+
+ --------  PYTHIA Event Listing  (hard process)  -----------------------------------------------------------------------------------
+ 
+    no         id  name            status     mothers   daughters     colours      p_x        p_y        p_z         e          m 
+     0         90  (system)           -11     0     0     0     0     0     0      0.000      0.000      0.000  13000.000  13000.000
+     1       2212  (p+)               -12     0     0     3     0     0     0      0.000      0.000   6500.000   6500.000      0.938
+     2       2212  (p+)               -12     0     0     4     0     0     0      0.000      0.000  -6500.000   6500.000      0.938
+     3          1  (d)                -21     1     0     5     6   501     0      0.000      0.000   1442.240   1442.240      0.000
+     4         -1  (dbar)             -21     2     0     5     6     0   501     -0.000     -0.000   -179.627    179.627      0.000
+     5       -556  (lwe+)             -22     3     4     7     8     0     0     22.158   -164.018   1328.834   1353.954    200.000
+     6        556  (lwe-)             -22     3     4     9    10     0     0    -22.158    164.018    -66.221    267.914    199.999
+     7        -11  e+                  23     5     0     0     0     0     0    -13.900    -13.565      8.062     21.029      0.001
+     8         23  (Z0)               -22     5     0    11    12     0     0     36.058   -150.453   1320.772   1332.925     91.188
+     9         11  e-                  23     6     0     0     0     0     0     10.282    161.570    -52.093    170.071      0.001
+    10         23  (Z0)               -22     6     0    13    14     0     0    -32.440      2.448    -14.128     97.842     91.188
+    11         11  e-                  23     8     0     0     0     0     0     24.260   -143.748    883.780    895.723      0.001
+    12        -11  e+                  23     8     0     0     0     0     0     11.798     -6.704    436.992    437.203      0.001
+    13         11  e-                  23    10     0     0     0     0     0      3.971     31.488    -34.615     46.962      0.001
+    14        -11  e+                  23    10     0     0     0     0     0    -36.412    -29.040     20.487     50.881      0.001
+                                   Charge sum:  0.000           Momentum sum:      0.000      0.000   1262.613   1621.868   1017.971
+
+ --------  End PYTHIA Event Listing  -----------------------------------------------------------------------------------------------
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 03-Sep-2024 19:18:23.137 CEST
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 03-Sep-2024 19:18:42.880 CEST
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 03-Sep-2024 19:19:01.630 CEST
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 03-Sep-2024 19:19:24.604 CEST
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 03-Sep-2024 19:19:38.243 CEST
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 03-Sep-2024 19:19:51.853 CEST
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 03-Sep-2024 19:20:07.584 CEST
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 03-Sep-2024 19:20:18.923 CEST
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 03-Sep-2024 19:20:37.008 CEST
+Begin processing the 11th record. Run 1, Event 11, LumiSection 1 on stream 0 at 03-Sep-2024 19:20:50.921 CEST
+Begin processing the 12th record. Run 1, Event 12, LumiSection 1 on stream 0 at 03-Sep-2024 19:21:14.816 CEST
+Begin processing the 13th record. Run 1, Event 13, LumiSection 1 on stream 0 at 03-Sep-2024 19:21:29.684 CEST
+Begin processing the 14th record. Run 1, Event 14, LumiSection 1 on stream 0 at 03-Sep-2024 19:21:39.712 CEST
+Begin processing the 15th record. Run 1, Event 15, LumiSection 1 on stream 0 at 03-Sep-2024 19:21:59.497 CEST
+Begin processing the 16th record. Run 1, Event 16, LumiSection 1 on stream 0 at 03-Sep-2024 19:22:13.885 CEST
+Begin processing the 17th record. Run 1, Event 17, LumiSection 1 on stream 0 at 03-Sep-2024 19:22:28.062 CEST
+Begin processing the 18th record. Run 1, Event 18, LumiSection 1 on stream 0 at 03-Sep-2024 19:22:40.861 CEST
+Begin processing the 19th record. Run 1, Event 19, LumiSection 1 on stream 0 at 03-Sep-2024 19:22:49.261 CEST
+Begin processing the 20th record. Run 1, Event 20, LumiSection 1 on stream 0 at 03-Sep-2024 19:23:03.804 CEST
+Begin processing the 21st record. Run 1, Event 21, LumiSection 1 on stream 0 at 03-Sep-2024 19:23:18.202 CEST
+Begin processing the 22nd record. Run 1, Event 22, LumiSection 1 on stream 0 at 03-Sep-2024 19:23:36.577 CEST
+Begin processing the 23rd record. Run 1, Event 23, LumiSection 1 on stream 0 at 03-Sep-2024 19:23:51.997 CEST
+Begin processing the 24th record. Run 1, Event 24, LumiSection 1 on stream 0 at 03-Sep-2024 19:24:05.897 CEST
+Begin processing the 25th record. Run 1, Event 25, LumiSection 1 on stream 0 at 03-Sep-2024 19:24:11.205 CEST
+Begin processing the 26th record. Run 1, Event 26, LumiSection 1 on stream 0 at 03-Sep-2024 19:24:47.986 CEST
+Begin processing the 27th record. Run 1, Event 27, LumiSection 1 on stream 0 at 03-Sep-2024 19:25:00.514 CEST
+Begin processing the 28th record. Run 1, Event 28, LumiSection 1 on stream 0 at 03-Sep-2024 19:25:18.999 CEST
+Begin processing the 29th record. Run 1, Event 29, LumiSection 1 on stream 0 at 03-Sep-2024 19:25:31.799 CEST
+Begin processing the 30th record. Run 1, Event 30, LumiSection 1 on stream 0 at 03-Sep-2024 19:25:44.000 CEST
+Begin processing the 31st record. Run 1, Event 31, LumiSection 1 on stream 0 at 03-Sep-2024 19:26:13.205 CEST
+Begin processing the 32nd record. Run 1, Event 32, LumiSection 1 on stream 0 at 03-Sep-2024 19:26:26.379 CEST
+Begin processing the 33rd record. Run 1, Event 33, LumiSection 1 on stream 0 at 03-Sep-2024 19:26:39.502 CEST
+Begin processing the 34th record. Run 1, Event 34, LumiSection 1 on stream 0 at 03-Sep-2024 19:26:52.374 CEST
+Begin processing the 35th record. Run 1, Event 35, LumiSection 1 on stream 0 at 03-Sep-2024 19:27:04.782 CEST
+Begin processing the 36th record. Run 1, Event 36, LumiSection 1 on stream 0 at 03-Sep-2024 19:27:18.806 CEST
+Begin processing the 37th record. Run 1, Event 37, LumiSection 1 on stream 0 at 03-Sep-2024 19:27:36.716 CEST
+Begin processing the 38th record. Run 1, Event 38, LumiSection 1 on stream 0 at 03-Sep-2024 19:27:45.457 CEST
+Begin processing the 39th record. Run 1, Event 39, LumiSection 1 on stream 0 at 03-Sep-2024 19:28:08.292 CEST
+Begin processing the 40th record. Run 1, Event 40, LumiSection 1 on stream 0 at 03-Sep-2024 19:28:21.769 CEST
+Begin processing the 41st record. Run 1, Event 41, LumiSection 1 on stream 0 at 03-Sep-2024 19:28:31.436 CEST
+Begin processing the 42nd record. Run 1, Event 42, LumiSection 1 on stream 0 at 03-Sep-2024 19:28:41.423 CEST
+Begin processing the 43rd record. Run 1, Event 43, LumiSection 1 on stream 0 at 03-Sep-2024 19:28:59.765 CEST
+Begin processing the 44th record. Run 1, Event 44, LumiSection 1 on stream 0 at 03-Sep-2024 19:29:26.315 CEST
+Begin processing the 45th record. Run 1, Event 45, LumiSection 1 on stream 0 at 03-Sep-2024 19:29:41.306 CEST
+Begin processing the 46th record. Run 1, Event 46, LumiSection 1 on stream 0 at 03-Sep-2024 19:29:55.151 CEST
+Begin processing the 47th record. Run 1, Event 47, LumiSection 1 on stream 0 at 03-Sep-2024 19:30:11.606 CEST
+Begin processing the 48th record. Run 1, Event 48, LumiSection 1 on stream 0 at 03-Sep-2024 19:30:31.859 CEST
+Begin processing the 49th record. Run 1, Event 49, LumiSection 1 on stream 0 at 03-Sep-2024 19:30:40.488 CEST
+Begin processing the 50th record. Run 1, Event 50, LumiSection 1 on stream 0 at 03-Sep-2024 19:30:58.908 CEST
+Begin processing the 51st record. Run 1, Event 51, LumiSection 1 on stream 0 at 03-Sep-2024 19:31:11.568 CEST
+Begin processing the 52nd record. Run 1, Event 52, LumiSection 1 on stream 0 at 03-Sep-2024 19:31:26.044 CEST
+Begin processing the 53rd record. Run 1, Event 53, LumiSection 1 on stream 0 at 03-Sep-2024 19:31:42.267 CEST
+Begin processing the 54th record. Run 1, Event 54, LumiSection 1 on stream 0 at 03-Sep-2024 19:32:05.359 CEST
+Begin processing the 55th record. Run 1, Event 55, LumiSection 1 on stream 0 at 03-Sep-2024 19:32:21.327 CEST
+Begin processing the 56th record. Run 1, Event 56, LumiSection 1 on stream 0 at 03-Sep-2024 19:32:32.731 CEST
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: weight above unity  
+Begin processing the 57th record. Run 1, Event 57, LumiSection 1 on stream 0 at 03-Sep-2024 19:32:44.293 CEST
+Begin processing the 58th record. Run 1, Event 58, LumiSection 1 on stream 0 at 03-Sep-2024 19:32:55.737 CEST
+Begin processing the 59th record. Run 1, Event 59, LumiSection 1 on stream 0 at 03-Sep-2024 19:33:17.860 CEST
+Begin processing the 60th record. Run 1, Event 60, LumiSection 1 on stream 0 at 03-Sep-2024 19:33:32.296 CEST
+Begin processing the 61st record. Run 1, Event 61, LumiSection 1 on stream 0 at 03-Sep-2024 19:33:51.034 CEST
+Begin processing the 62nd record. Run 1, Event 62, LumiSection 1 on stream 0 at 03-Sep-2024 19:34:11.922 CEST
+Begin processing the 63rd record. Run 1, Event 63, LumiSection 1 on stream 0 at 03-Sep-2024 19:34:18.879 CEST
+Begin processing the 64th record. Run 1, Event 64, LumiSection 1 on stream 0 at 03-Sep-2024 19:34:24.073 CEST
+Begin processing the 65th record. Run 1, Event 65, LumiSection 1 on stream 0 at 03-Sep-2024 19:34:31.344 CEST
+Begin processing the 66th record. Run 1, Event 66, LumiSection 1 on stream 0 at 03-Sep-2024 19:34:40.933 CEST
+Begin processing the 67th record. Run 1, Event 67, LumiSection 1 on stream 0 at 03-Sep-2024 19:34:54.755 CEST
+Begin processing the 68th record. Run 1, Event 68, LumiSection 1 on stream 0 at 03-Sep-2024 19:35:10.683 CEST
+Begin processing the 69th record. Run 1, Event 69, LumiSection 1 on stream 0 at 03-Sep-2024 19:35:30.591 CEST
+Begin processing the 70th record. Run 1, Event 70, LumiSection 1 on stream 0 at 03-Sep-2024 19:35:47.708 CEST
+Begin processing the 71st record. Run 1, Event 71, LumiSection 1 on stream 0 at 03-Sep-2024 19:36:04.863 CEST
+Begin processing the 72nd record. Run 1, Event 72, LumiSection 1 on stream 0 at 03-Sep-2024 19:36:13.903 CEST
+Begin processing the 73rd record. Run 1, Event 73, LumiSection 1 on stream 0 at 03-Sep-2024 19:36:24.209 CEST
+Begin processing the 74th record. Run 1, Event 74, LumiSection 1 on stream 0 at 03-Sep-2024 19:36:34.096 CEST
+Begin processing the 75th record. Run 1, Event 75, LumiSection 1 on stream 0 at 03-Sep-2024 19:36:46.214 CEST
+Begin processing the 76th record. Run 1, Event 76, LumiSection 1 on stream 0 at 03-Sep-2024 19:37:00.500 CEST
+Begin processing the 77th record. Run 1, Event 77, LumiSection 1 on stream 0 at 03-Sep-2024 19:37:20.078 CEST
+Begin processing the 78th record. Run 1, Event 78, LumiSection 1 on stream 0 at 03-Sep-2024 19:37:31.437 CEST
+Begin processing the 79th record. Run 1, Event 79, LumiSection 1 on stream 0 at 03-Sep-2024 19:37:43.258 CEST
+Begin processing the 80th record. Run 1, Event 80, LumiSection 1 on stream 0 at 03-Sep-2024 19:38:05.519 CEST
+Begin processing the 81st record. Run 1, Event 81, LumiSection 1 on stream 0 at 03-Sep-2024 19:38:20.898 CEST
+Begin processing the 82nd record. Run 1, Event 82, LumiSection 1 on stream 0 at 03-Sep-2024 19:38:41.924 CEST
+Begin processing the 83rd record. Run 1, Event 83, LumiSection 1 on stream 0 at 03-Sep-2024 19:38:56.499 CEST
+Begin processing the 84th record. Run 1, Event 84, LumiSection 1 on stream 0 at 03-Sep-2024 19:39:14.880 CEST
+Begin processing the 85th record. Run 1, Event 85, LumiSection 1 on stream 0 at 03-Sep-2024 19:39:31.954 CEST
+Begin processing the 86th record. Run 1, Event 86, LumiSection 1 on stream 0 at 03-Sep-2024 19:39:43.239 CEST
+Begin processing the 87th record. Run 1, Event 87, LumiSection 1 on stream 0 at 03-Sep-2024 19:40:10.922 CEST
+Begin processing the 88th record. Run 1, Event 88, LumiSection 1 on stream 0 at 03-Sep-2024 19:40:22.449 CEST
+Begin processing the 89th record. Run 1, Event 89, LumiSection 1 on stream 0 at 03-Sep-2024 19:40:29.044 CEST
+Begin processing the 90th record. Run 1, Event 90, LumiSection 1 on stream 0 at 03-Sep-2024 19:40:38.312 CEST
+Begin processing the 91st record. Run 1, Event 91, LumiSection 1 on stream 0 at 03-Sep-2024 19:41:03.789 CEST
+Begin processing the 92nd record. Run 1, Event 92, LumiSection 1 on stream 0 at 03-Sep-2024 19:41:11.401 CEST
+Begin processing the 93rd record. Run 1, Event 93, LumiSection 1 on stream 0 at 03-Sep-2024 19:41:20.747 CEST
+Begin processing the 94th record. Run 1, Event 94, LumiSection 1 on stream 0 at 03-Sep-2024 19:41:32.426 CEST
+Begin processing the 95th record. Run 1, Event 95, LumiSection 1 on stream 0 at 03-Sep-2024 19:41:41.667 CEST
+Begin processing the 96th record. Run 1, Event 96, LumiSection 1 on stream 0 at 03-Sep-2024 19:41:58.848 CEST
+Begin processing the 97th record. Run 1, Event 97, LumiSection 1 on stream 0 at 03-Sep-2024 19:42:10.309 CEST
+Begin processing the 98th record. Run 1, Event 98, LumiSection 1 on stream 0 at 03-Sep-2024 19:42:20.119 CEST
+Begin processing the 99th record. Run 1, Event 99, LumiSection 1 on stream 0 at 03-Sep-2024 19:42:27.149 CEST
+Begin processing the 100th record. Run 1, Event 100, LumiSection 1 on stream 0 at 03-Sep-2024 19:42:51.780 CEST
+03-Sep-2024 19:43:03 CEST  Closed LHE file file:JJSJ_Addflighttime.lhe
+
+ *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
+ |                                                                                                                 |
+ | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+ |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+ |                                                    |                                   |                        |
+ |-----------------------------------------------------------------------------------------------------------------|
+ |                                                    |                                   |                        |
+ | Les Houches User Process(es)                  9999 |         100        100        100 |   1.455e-11  0.000e+00 |
+ |    ... whereof user classification code          1 |         100        100        100 |                        | 
+ |                                                    |                                   |                        |
+ | sum                                                |         100        100        100 |   1.455e-11  0.000e+00 |
+ |                                                                                                                 |
+ *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
+
+ *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+ |                                                                                                                 | 
+ |  times   message                                                                                                | 
+ |                                                                                                                 | 
+ |      1   Info from SLHAinterface::initSLHA: No MODSEL found, keeping internal SUSY switched off                 | 
+ |      1   Warning in MultipartonInteractions::init: maximum increased                                            | 
+ |      2   Warning in SLHAinterface::initSLHA: ignoring DECAY tables                                              | 
+ |      2   Warning in SLHAinterface::initSLHA: ignoring MASS entries                                              | 
+ |      1   Warning in SLHAinterface::initSLHA: ignoring QNUMBERS                                                  | 
+ |      1   Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                           | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
+
+------------------------------------
+GenXsecAnalyzer:
+------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Overall cross-section summary 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Process		xsec_before [pb]		passed	nposw	nnegw	tried	nposw	nnegw 	xsec_match [pb]			accepted [%]	 event_eff [%]
+0		1.455e-02 +/- 1.124e-04		100	100	0	100	100	0	1.455e-02 +/- 1.124e-04		100.0 +/- 0.0	100.0 +/- 0.0
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Total		1.455e-02 +/- 1.124e-04		100	100	0	100	100	0	1.455e-02 +/- 1.124e-04		100.0 +/- 0.0	100.0 +/- 0.0
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Before matching: total cross section = 1.455e-02 +- 1.124e-04 pb
+After matching: total cross section = 1.455e-02 +- 1.124e-04 pb
+Matching efficiency = 1.0 +/- 0.0   [TO BE USED IN MCM]
+Filter efficiency (taking into account weights)= (1.4546) / (1.4546) = 1.000e+00 +- 0.000e+00
+Filter efficiency (event-level)= (100) / (100) = 1.000e+00 +- 0.000e+00    [TO BE USED IN MCM]
+
+After filter: final cross section = 1.455e-02 +- 1.124e-04 pb
+After filter: final fraction of events with negative weights = 0.000e+00 +- 0.000e+00
+After filter: final equivalent lumi for 1M events (1/fb) = 6.875e+04 +- 5.356e+02
+TimeReport> Time report complete in 1635.85 seconds
+ Time Summary: 
+ - Min event:   5.1929
+ - Max event:   36.7786
+ - Avg event:   14.9742
+ - Total loop:  1557.18
+ - Total init:  75.8836
+ - Total job:   1635.85
+ - EventSetup Lock:   2.21729e-05
+ - EventSetup Get:   5.61622
+ Event Throughput: 0.0642187 ev/s
+ CPU Summary: 
+ - Total loop:  1514.41
+ - Total init:  3.32545
+ - Total extra: 0
+ - Total job:   1520.32
+ Processing Summary: 
+ - Number of Events:  100
+ - Number of Global Begin Lumi Calls:  1
+ - Number of Global Begin Run Calls: 1
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 GenXSecAnalyzer      -w GenXSecAnalyzer:                      15       15
+    2 LogicError           -w Pythia8Hadronize                       1        1
+    3 TimeReport           -e AfterModEndJob                         1        1
+    4 fileAction           -s LHESource:source                       2        2
+    5 fileAction           -s PostProcessPath                        1        1
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 GenXSecAnalyzer      PostGlobalEndRun PostGlobalEndRun PostGlobalEndRun
+    2 LogicError           Run: 1                            
+    3 TimeReport           PostGlobalEndRun                  
+    4 fileAction           pre-events       pre-events       
+    5 fileAction           PostProcessEvent                  
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                16                  16
+Error                   1                   1
+System                  3                   3
+
+dropped waiting message count 0
