@@ -1,0 +1,9 @@
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="DataFormats/TrackReco"/>
+<use name="hepmc"/>
+<use name="SimGeneral/HepPDTRecord"/>
+<use name="heppdt"/>
+<use name="PhysicsTools/HepMCCandAlgos"/>
+<flags EDM_PLUGIN="1"/>

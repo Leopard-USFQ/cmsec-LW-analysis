@@ -1,0 +1,49 @@
+#include "FWCore/Framework/interface/EDProducer.h"
+#include "DataFormats/HepMCCandidate/interface/GenParticle.h"
+#include "FWCore/Framework/interface/Event.h"
+#include "FWCore/ParameterSet/interface/ParameterSet.h"
+#include <iostream>
+
+using namespace std;
+
+class ModifyGenParticles : public edm::EDProducer {
+public:
+    explicit ModifyGenParticles(const edm::ParameterSet&);
+    void produce(edm::Event&, const edm::EventSetup&) override;
+
+private:
+    edm::EDGetTokenT<reco::GenParticleCollection> genParticlesToken_;
+};
+
+ModifyGenParticles::ModifyGenParticles(const edm::ParameterSet& iConfig) {
+    // Register the input collection
+    genParticlesToken_ = consumes<reco::GenParticleCollection>(iConfig.getParameter<edm::InputTag>("src"));
+    
+    // Register the output collection
+    produces<reco::GenParticleCollection>();
+}
+
+void ModifyGenParticles::produce(edm::Event& iEvent, const edm::EventSetup& iSetup) {
+    // Retrieve the genParticles collection
+    edm::Handle<reco::GenParticleCollection> genParticles;
+    iEvent.getByToken(genParticlesToken_, genParticles);
+    
+    // Create a new collection to hold modified particles
+    auto modifiedParticles = std::make_unique<reco::GenParticleCollection>();
+    
+    for (const auto& particle : *genParticles) {
+        // Modify properties as needed, e.g., momentum
+        reco::GenParticle modifiedParticle = particle; // Copy the original particle
+        modifiedParticle.setP4(particle.p4() * 2.0); // Modify momentum (example)
+        cout << particle.px() << " " << modifiedParticle.px()<<endl;
+        modifiedParticles->push_back(modifiedParticle);
+        particle=modifiedParticles;
+    }
+    
+    // Put the modified collection into the event
+    iEvent.put(std::move(modifiedParticles));
+}
+
+// Define this as a plug-in
+#include "FWCore/Framework/interface/MakerMacros.h"
+DEFINE_FWK_MODULE(ModifyGenParticles);
