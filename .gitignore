@@ -1,4 +1,6 @@
 *.root
+#No extension files ignored
+*.
 
 #ignore venv i vscode
 /LWtest/.venv/
