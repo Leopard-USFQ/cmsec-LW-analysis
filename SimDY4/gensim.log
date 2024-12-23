@@ -1,0 +1,7 @@
+----- Begin Fatal Exception 27-Aug-2024 17:11:35 CEST-----------------------
+An exception of category 'StdException' occurred while
+   [0] Processing the python configuration file named gensim.py
+Exception Message:
+A std::exception was thrown.
+File "gensim.py" could not be opened!
+----- End Fatal Exception -------------------------------------------------
