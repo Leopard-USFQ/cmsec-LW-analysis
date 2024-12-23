@@ -1,3 +1,5 @@
+//compilate with g++ -v -o MiD ModifieriterativeDaughter.cpp -I/usr/local/include -L/usr/local/lib -lHepMC
+
 #include <iostream>
 #include <fstream>
 #include <set>
